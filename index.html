@@ -43,38 +43,41 @@ body {
     color: var(--text);
     -webkit-font-smoothing: antialiased;
 }
-.widget { width: 100%; max-width: 620px; margin: 0 auto; padding: 16px; }/* Header */
+.widget { width: 100%; max-width: 620px; margin: 0 auto; padding: 16px; }
+
+/* Header */
 .cw-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
 .cw-back-btn { background: none; border: none; color: var(--primary); cursor: pointer; font-size: 22px; padding: 4px 8px; line-height: 1; border-radius: 6px; }
 .cw-back-btn:hover { background: var(--bg-gray); }
 .cw-header h2 { font-size: 17px; font-weight: 700; flex: 1; }
 .form-badge { font-size: 11px; color: var(--text-light); background: var(--bg-gray); padding: 3px 9px; border-radius: 12px; border: 1px solid var(--border); white-space: nowrap; }
+
 /* Home screen */
 .home-title { font-size: 20px; font-weight: 700; margin-bottom: 14px; }
 .search-wrap { position: relative; margin-bottom: 12px; }
 .search-icon { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); font-size: 15px; pointer-events: none; }
 .search-input {
-width: 100%; padding: 10px 12px 10px 36px;
-border: 1.5px solid var(--border); border-radius: 10px;
-font-size: 14px; font-family: inherit;
-background: var(--bg); color: var(--text);
-outline: none; transition: border-color 0.15s;
+    width: 100%; padding: 10px 12px 10px 36px;
+    border: 1.5px solid var(--border); border-radius: 10px;
+    font-size: 14px; font-family: inherit;
+    background: var(--bg); color: var(--text);
+    outline: none; transition: border-color 0.15s;
 }
 .search-input:focus { border-color: var(--primary); }
 .cat-pills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
 .cat-pill {
-padding: 5px 13px; border-radius: 20px; font-size: 12px; font-weight: 600;
-border: 1.5px solid var(--border); background: var(--bg); color: var(--text-light);
-cursor: pointer; transition: all 0.12s; white-space: nowrap;
+    padding: 5px 13px; border-radius: 20px; font-size: 12px; font-weight: 600;
+    border: 1.5px solid var(--border); background: var(--bg); color: var(--text-light);
+    cursor: pointer; transition: all 0.12s; white-space: nowrap;
 }
 .cat-pill:hover { border-color: var(--primary); color: var(--primary); }
 .cat-pill.active { background: var(--primary); border-color: var(--primary); color: #fff; }
 .form-list { display: flex; flex-direction: column; gap: 8px; }
 .form-row {
-display: flex; align-items: center; gap: 12px;
-padding: 13px 14px; border: 1.5px solid var(--border);
-border-radius: 11px; cursor: pointer; background: var(--bg);
-transition: border-color 0.13s, box-shadow 0.13s;
+    display: flex; align-items: center; gap: 12px;
+    padding: 13px 14px; border: 1.5px solid var(--border);
+    border-radius: 11px; cursor: pointer; background: var(--bg);
+    transition: border-color 0.13s, box-shadow 0.13s;
 }
 .form-row:hover { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(37,99,235,0.07); }
 .fr-icon { font-size: 22px; flex-shrink: 0; width: 36px; text-align: center; }
@@ -83,152 +86,159 @@ transition: border-color 0.13s, box-shadow 0.13s;
 .fr-meta { display: flex; align-items: center; gap: 6px; margin-top: 3px; }
 .fr-number { font-size: 11px; font-weight: 700; color: var(--text-light); }
 .fr-cat {
-font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
-padding: 1px 6px; border-radius: 4px; background: var(--bg-gray); color: var(--text-light);
+    font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em;
+    padding: 1px 6px; border-radius: 4px; background: var(--bg-gray); color: var(--text-light);
 }
 .fr-arrow { font-size: 16px; color: var(--text-light); flex-shrink: 0; }
 .no-results { text-align: center; padding: 32px 0; color: var(--text-light); font-size: 14px; }
+
 /* Form layout */
 .form-section { margin-bottom: 24px; }
 .section-title {
-font-size: 11px; font-weight: 700; text-transform: uppercase;
-letter-spacing: 0.07em; color: var(--text-light);
-margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 0.07em; color: var(--text-light);
+    margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border);
 }
 .field-group { margin-bottom: 14px; }
 .field-label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; }
 .field-input, .field-select, .field-textarea {
-width: 100%; padding: 9px 12px;
-border: 1.5px solid var(--border); border-radius: 8px;
-font-size: 14px; font-family: inherit;
-background: var(--bg); color: var(--text);
-outline: none; transition: border-color 0.15s;
+    width: 100%; padding: 9px 12px;
+    border: 1.5px solid var(--border); border-radius: 8px;
+    font-size: 14px; font-family: inherit;
+    background: var(--bg); color: var(--text);
+    outline: none; transition: border-color 0.15s;
 }
 .field-input:focus, .field-select:focus, .field-textarea:focus { border-color: var(--primary); }
 .field-textarea { resize: vertical; min-height: 70px; }
 .field-row { display: flex; gap: 8px; align-items: center; }
 .field-row .field-input { flex: 1; }
 .field-suffix { font-size: 13px; color: var(--text-light); white-space: nowrap; }
+
 /* Audit / Risk items */
 .audit-item {
-border: 1.5px solid var(--border); border-radius: 10px;
-padding: 12px; margin-bottom: 10px;
-transition: border-color 0.15s, background 0.15s;
+    border: 1.5px solid var(--border); border-radius: 10px;
+    padding: 12px; margin-bottom: 10px;
+    transition: border-color 0.15s, background 0.15s;
 }
 .audit-item.risk-good    { border-color: var(--risk-good);   background: #f0fdf4; }
 .audit-item.risk-low     { border-color: var(--risk-low);    background: #eff6ff; }
 .audit-item.risk-medium  { border-color: var(--risk-medium); background: #fffbeb; }
 .audit-item.risk-high    { border-color: var(--risk-high);   background: #fef2f2; }
 @media (prefers-color-scheme: dark) {
-.audit-item.risk-good   { background: rgba(16,185,129,0.09); }
-.audit-item.risk-low    { background: rgba(59,130,246,0.09); }
-.audit-item.risk-medium { background: rgba(245,158,11,0.09); }
-.audit-item.risk-high   { background: rgba(239,68,68,0.09); }
+    .audit-item.risk-good   { background: rgba(16,185,129,0.09); }
+    .audit-item.risk-low    { background: rgba(59,130,246,0.09); }
+    .audit-item.risk-medium { background: rgba(245,158,11,0.09); }
+    .audit-item.risk-high   { background: rgba(239,68,68,0.09); }
 }
 .audit-top { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
 .audit-label { flex: 1; font-size: 13px; font-weight: 600; line-height: 1.3; }
 .audit-indicator {
-width: 26px; height: 26px; border-radius: 5px;
-background: #d1d5db; flex-shrink: 0; transition: background 0.2s;
+    width: 26px; height: 26px; border-radius: 5px;
+    background: #d1d5db; flex-shrink: 0; transition: background 0.2s;
 }
 .audit-indicator.ind-good   { background: var(--risk-good); }
 .audit-indicator.ind-low    { background: var(--risk-low); }
 .audit-indicator.ind-medium { background: var(--risk-medium); }
 .audit-indicator.ind-high   { background: var(--risk-high); }
 .audit-select {
-padding: 6px 10px; border: 1.5px solid var(--border); border-radius: 6px;
-font-size: 13px; font-family: inherit;
-background: var(--bg); color: var(--text); outline: none;
+    padding: 6px 10px; border: 1.5px solid var(--border); border-radius: 6px;
+    font-size: 13px; font-family: inherit;
+    background: var(--bg); color: var(--text); outline: none;
 }
 .audit-notes {
-width: 100%; padding: 7px 10px; border: 1.5px solid var(--border);
-border-radius: 6px; font-size: 12px; font-family: inherit;
-background: var(--bg); color: var(--text);
-resize: vertical; min-height: 50px; outline: none;
+    width: 100%; padding: 7px 10px; border: 1.5px solid var(--border);
+    border-radius: 6px; font-size: 12px; font-family: inherit;
+    background: var(--bg); color: var(--text);
+    resize: vertical; min-height: 50px; outline: none;
 }
+
 /* Radio / checkbox tables */
 .radio-table, .applicable-table {
-width: 100%; border-collapse: collapse; font-size: 13px;
+    width: 100%; border-collapse: collapse; font-size: 13px;
 }
 .radio-table th, .applicable-table th {
-font-size: 11px; font-weight: 700; color: var(--text-light);
-text-align: center; padding: 6px 4px; border-bottom: 1px solid var(--border);
-white-space: nowrap;
+    font-size: 11px; font-weight: 700; color: var(--text-light);
+    text-align: center; padding: 6px 4px; border-bottom: 1px solid var(--border);
+    white-space: nowrap;
 }
 .radio-table th:first-child, .applicable-table th:first-child { text-align: left; }
 .radio-table td, .applicable-table td {
-padding: 8px 4px; border-bottom: 1px solid var(--border); vertical-align: middle;
+    padding: 8px 4px; border-bottom: 1px solid var(--border); vertical-align: middle;
 }
 .radio-table td:not(:first-child), .applicable-table td:not(:first-child) { text-align: center; }
 .radio-table tr:last-child td, .applicable-table tr:last-child td { border-bottom: none; }
 .radio-table input[type="radio"], .applicable-table input[type="radio"] {
-width: 15px; height: 15px; accent-color: var(--primary); cursor: pointer;
+    width: 15px; height: 15px; accent-color: var(--primary); cursor: pointer;
 }
+
 /* Checkboxes */
 .checkbox-list { display: flex; flex-direction: column; gap: 9px; }
 .checkbox-item { display: flex; align-items: flex-start; gap: 9px; font-size: 13px; cursor: pointer; line-height: 1.4; }
 .checkbox-item input[type="checkbox"] {
-width: 16px; height: 16px; margin-top: 1px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;
+    width: 16px; height: 16px; margin-top: 1px; accent-color: var(--primary); cursor: pointer; flex-shrink: 0;
 }
+
 /* Signature pad */
 .sig-wrap { border: 1.5px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--bg); }
 .sig-canvas { display: block; width: 100%; height: 100px; touch-action: none; cursor: crosshair; }
 .sig-footer {
-display: flex; justify-content: space-between; align-items: center;
-padding: 6px 12px; border-top: 1px solid var(--border); background: var(--bg-gray);
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 6px 12px; border-top: 1px solid var(--border); background: var(--bg-gray);
 }
 .sig-hint { font-size: 11px; color: var(--text-light); }
 .sig-clear { font-size: 12px; color: var(--danger); background: none; border: none; cursor: pointer; font-family: inherit; padding: 0; }
+
 /* Upload */
 .upload-zone {
-border: 2px dashed var(--border); border-radius: 8px; padding: 20px;
-text-align: center; cursor: pointer; transition: border-color 0.15s;
+    border: 2px dashed var(--border); border-radius: 8px; padding: 20px;
+    text-align: center; cursor: pointer; transition: border-color 0.15s;
 }
 .upload-zone:hover { border-color: var(--primary); }
 .upload-zone input[type="file"] { display: none; }
 .upload-zone-icon { font-size: 24px; margin-bottom: 6px; }
 .upload-zone-text { font-size: 13px; color: var(--text-light); }
 .upload-filename { font-size: 13px; color: var(--success); margin-top: 6px; font-weight: 600; }
+
 /* Buttons */
 .submit-row {
-display: flex; gap: 10px; margin-top: 24px;
-padding-top: 16px; border-top: 1px solid var(--border);
+    display: flex; gap: 10px; margin-top: 24px;
+    padding-top: 16px; border-top: 1px solid var(--border);
 }
 .cw-btn {
-flex: 1; padding: 13px; font-size: 15px; border-radius: 10px;
-background: var(--primary); color: white; border: none;
-cursor: pointer; font-weight: 700; font-family: inherit; transition: filter 0.15s;
+    flex: 1; padding: 13px; font-size: 15px; border-radius: 10px;
+    background: var(--primary); color: white; border: none;
+    cursor: pointer; font-weight: 700; font-family: inherit; transition: filter 0.15s;
 }
 .cw-btn:hover { filter: brightness(0.92); }
 .cw-btn-secondary {
-flex: 1; padding: 13px; font-size: 15px; border-radius: 10px;
-background: var(--bg-gray); color: var(--text);
-border: 1.5px solid var(--border); cursor: pointer; font-weight: 600; font-family: inherit;
+    flex: 1; padding: 13px; font-size: 15px; border-radius: 10px;
+    background: var(--bg-gray); color: var(--text);
+    border: 1.5px solid var(--border); cursor: pointer; font-weight: 600; font-family: inherit;
 }
 .cw-badge-btn {
-display: inline-flex; align-items: center; gap: 5px;
-padding: 5px 12px; border-radius: 6px; font-size: 12px;
-font-weight: 700; border: none; cursor: pointer; font-family: inherit;
+    display: inline-flex; align-items: center; gap: 5px;
+    padding: 5px 12px; border-radius: 6px; font-size: 12px;
+    font-weight: 700; border: none; cursor: pointer; font-family: inherit;
 }
 .cw-badge-btn.warning { background: var(--warning); color: #fff; }
+
 /* Success */
 .success-view { text-align: center; padding: 40px 16px; }
 .success-icon { font-size: 56px; margin-bottom: 16px; }
 .success-view h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
 .success-view p { color: var(--text-light); font-size: 15px; margin-bottom: 24px; }
 .success-meta {
-display: inline-flex; flex-direction: column; gap: 6px;
-text-align: left; background: var(--bg-gray);
-border-radius: 10px; padding: 14px 20px; margin-bottom: 28px; font-size: 13px;
+    display: inline-flex; flex-direction: column; gap: 6px;
+    text-align: left; background: var(--bg-gray);
+    border-radius: 10px; padding: 14px 20px; margin-bottom: 28px; font-size: 13px;
 }
 .success-meta span { color: var(--text-light); }
 .success-meta strong { color: var(--text); }
+
 .mt8 { margin-top: 8px; }
 .mt12 { margin-top: 12px; }
 .overflow-x { overflow-x: auto; }
 </style>
-
-
 </head>
 <body>
 <div class="widget" id="app"></div>
@@ -244,739 +254,892 @@ const LANG = (() => {
     return 'en-US';
 })();
 document.documentElement.lang = LANG;
-const LOCALE = { 'de':'de-DE','fr':'fr-FR','es':'es-ES','ja':'ja-JP','en-GB':'en-GB','en-US':'en-US' }[LANG];const TR = {
-de: {
-title:'Sicherheitsformulare', desc:'Sicherheitsformulare ausfüllen und einreichen',
-select:'Formular auswählen', selectSub:'Wählen Sie eine Vorlage aus, um zu beginnen',
-submit:'Einreichen', draft:'Als Entwurf speichern', back:'Zurück',
-clear:'Löschen', upload:'PDF hochladen', chooseFile:'Datei auswählen',
-signHere:'Hier unterschreiben', successTitle:'Formular eingereicht!',
-successMsg:'Das Formular wurde erfolgreich eingereicht.', another:'Weiteres Formular',
-by:'Eingereicht von', form:'Formular', time:'Uhrzeit', project:'Projekt',
-},
-fr: {
-title:'Formulaires de securite', desc:'Remplir et soumettre les formulaires de securite du chantier',
-select:'Choisir un formulaire', selectSub:'Selectionnez un modele pour commencer',
-submit:'Soumettre', draft:'Enregistrer comme brouillon', back:'Retour',
-clear:'Effacer', upload:'Telecharger PDF', chooseFile:'Choisir un fichier',
-signHere:'Signer ici', successTitle:'Formulaire soumis !',
-successMsg:'Le formulaire a ete soumis avec succes.', another:'Autre formulaire',
-by:'Soumis par', form:'Formulaire', time:'Heure', project:'Projet',
-},
-es: {
-title:'Formularios de seguridad', desc:'Complete y envie formularios de seguridad del sitio',
-select:'Seleccionar formulario', selectSub:'Seleccione una plantilla para comenzar',
-submit:'Enviar', draft:'Guardar como borrador', back:'Volver',
-clear:'Borrar', upload:'Subir PDF', chooseFile:'Elegir archivo',
-signHere:'Firmar aqui', successTitle:'Formulario enviado!',
-successMsg:'El formulario se envio correctamente.', another:'Otro formulario',
-by:'Enviado por', form:'Formulario', time:'Hora', project:'Proyecto',
-},
-ja: {
-title:'安全フォーム', desc:'現場安全フォームを記入して送信',
-select:'フォームを選択', selectSub:'テンプレートを選択して開始',
-submit:'送信', draft:'下書きとして保存', back:'戻る',
-clear:'クリア', upload:'PDFをアップロード', chooseFile:'ファイルを選択',
-signHere:'ここに署名', successTitle:'フォームが送信されました！',
-successMsg:'フォームが正常に送信されました。', another:'別のフォームを送信',
-by:'送信者', form:'フォーム', time:'時間', project:'プロジェクト',
-},
-'en-GB': {
-title:'Safety Forms', desc:'Complete and submit site safety forms',
-select:'Select a Form', selectSub:'Choose a template to get started',
-submit:'Submit', draft:'Save as Draft', back:'Back',
-clear:'Clear', upload:'Upload PDF', chooseFile:'Choose File',
-signHere:'Sign here', successTitle:'Form Submitted!',
-successMsg:'Your form has been submitted successfully.', another:'Submit Another Form',
-by:'Submitted by', form:'Form', time:'Time', project:'Project',
-},
-'en-US': {
-title:'Safety Forms', desc:'Complete and submit site safety forms',
-select:'Select a Form', selectSub:'Choose a template to get started',
-submit:'Submit', draft:'Save as Draft', back:'Back',
-clear:'Clear', upload:'Upload PDF', chooseFile:'Choose File',
-signHere:'Sign here', successTitle:'Form Submitted!',
-successMsg:'Your form has been submitted successfully.', another:'Submit Another Form',
-by:'Submitted by', form:'Form', time:'Time', project:'Project',
-},
+const LOCALE = { 'de':'de-DE','fr':'fr-FR','es':'es-ES','ja':'ja-JP','en-GB':'en-GB','en-US':'en-US' }[LANG];
+
+const TR = {
+    de: {
+        title:'Sicherheitsformulare', desc:'Sicherheitsformulare ausfüllen und einreichen',
+        select:'Formular auswählen', selectSub:'Wählen Sie eine Vorlage aus, um zu beginnen',
+        submit:'Einreichen', draft:'Als Entwurf speichern', back:'Zurück',
+        clear:'Löschen', upload:'PDF hochladen', chooseFile:'Datei auswählen',
+        signHere:'Hier unterschreiben', successTitle:'Formular eingereicht!',
+        successMsg:'Das Formular wurde erfolgreich eingereicht.', another:'Weiteres Formular',
+        by:'Eingereicht von', form:'Formular', time:'Uhrzeit', project:'Projekt',
+    },
+    fr: {
+        title:'Formulaires de securite', desc:'Remplir et soumettre les formulaires de securite du chantier',
+        select:'Choisir un formulaire', selectSub:'Selectionnez un modele pour commencer',
+        submit:'Soumettre', draft:'Enregistrer comme brouillon', back:'Retour',
+        clear:'Effacer', upload:'Telecharger PDF', chooseFile:'Choisir un fichier',
+        signHere:'Signer ici', successTitle:'Formulaire soumis !',
+        successMsg:'Le formulaire a ete soumis avec succes.', another:'Autre formulaire',
+        by:'Soumis par', form:'Formulaire', time:'Heure', project:'Projet',
+    },
+    es: {
+        title:'Formularios de seguridad', desc:'Complete y envie formularios de seguridad del sitio',
+        select:'Seleccionar formulario', selectSub:'Seleccione una plantilla para comenzar',
+        submit:'Enviar', draft:'Guardar como borrador', back:'Volver',
+        clear:'Borrar', upload:'Subir PDF', chooseFile:'Elegir archivo',
+        signHere:'Firmar aqui', successTitle:'Formulario enviado!',
+        successMsg:'El formulario se envio correctamente.', another:'Otro formulario',
+        by:'Enviado por', form:'Formulario', time:'Hora', project:'Proyecto',
+    },
+    ja: {
+        title:'安全フォーム', desc:'現場安全フォームを記入して送信',
+        select:'フォームを選択', selectSub:'テンプレートを選択して開始',
+        submit:'送信', draft:'下書きとして保存', back:'戻る',
+        clear:'クリア', upload:'PDFをアップロード', chooseFile:'ファイルを選択',
+        signHere:'ここに署名', successTitle:'フォームが送信されました！',
+        successMsg:'フォームが正常に送信されました。', another:'別のフォームを送信',
+        by:'送信者', form:'フォーム', time:'時間', project:'プロジェクト',
+    },
+    'en-GB': {
+        title:'Safety Forms', desc:'Complete and submit site safety forms',
+        select:'Select a Form', selectSub:'Choose a template to get started',
+        submit:'Submit', draft:'Save as Draft', back:'Back',
+        clear:'Clear', upload:'Upload PDF', chooseFile:'Choose File',
+        signHere:'Sign here', successTitle:'Form Submitted!',
+        successMsg:'Your form has been submitted successfully.', another:'Submit Another Form',
+        by:'Submitted by', form:'Form', time:'Time', project:'Project',
+    },
+    'en-US': {
+        title:'Safety Forms', desc:'Complete and submit site safety forms',
+        select:'Select a Form', selectSub:'Choose a template to get started',
+        submit:'Submit', draft:'Save as Draft', back:'Back',
+        clear:'Clear', upload:'Upload PDF', chooseFile:'Choose File',
+        signHere:'Sign here', successTitle:'Form Submitted!',
+        successMsg:'Your form has been submitted successfully.', another:'Submit Another Form',
+        by:'Submitted by', form:'Form', time:'Time', project:'Project',
+    },
 };
 const L = TR[LANG] || TR['en-US'];
+
 // --- SB brand ---
 function applySBBrand() {
-var sb = getComputedStyle(document.documentElement).getPropertyValue('--sb-brand').trim();
-if (sb) { document.documentElement.style.setProperty('--primary', sb); return; }
-try {
-sb = window.parent.getComputedStyle(window.parent.document.documentElement).getPropertyValue('--sb-brand').trim();
-if (sb) document.documentElement.style.setProperty('--primary', sb);
-} catch(e){}
+    var sb = getComputedStyle(document.documentElement).getPropertyValue('--sb-brand').trim();
+    if (sb) { document.documentElement.style.setProperty('--primary', sb); return; }
+    try {
+        sb = window.parent.getComputedStyle(window.parent.document.documentElement).getPropertyValue('--sb-brand').trim();
+        if (sb) document.documentElement.style.setProperty('--primary', sb);
+    } catch(e){}
 }
+
 // --- Constants ---
 const PROJECTS = ['Downtown Core - Phase 1','Riverside Complex','Westside Tower','North Campus Building B','Midtown Parkway'];
 const WORKERS  = ['Marcus Barlow','Maya Kumar','Thomas Lawrence','Joel Riggs','Elizabeth Rorke','Kelsey Rupowski','Anne Ryder','Fred Duchamp','Henry Fitz'];
 const RISK_OPTIONS = ['','N/A','Good','Low Risk','Medium Risk','High Risk'];
 const STORAGE_KEY  = 'safety_form_submissions';
+
 // ── FORM CATALOG ────────────────────────────────────────────────────────────
 // To add a new form: add an entry here + a buildXxx() function below.
 // 'id' must match the key used in openForm() / collectData().
 // ────────────────────────────────────────────────────────────────────────────
 const FORM_CATALOG = [
-{ id:'morning-huddle', number:'1.9',  name:'Morning Huddle',              category:'Daily',   icon:'☀️' },
-{ id:'site-safety',    number:'2.0',  name:'Site Safety Inspection',      category:'Safety',  icon:'🦶'       },
-{ id:'pre-site',       number:'3.2',  name:'Pre-Site Inspection',         category:'Safety',  icon:'📋'       },
-{ id:'concrete-pump',  number:'3.01', name:'PSI – Concrete Pump Operator', category:'PSI', icon:'🏗️' },
-{ id:'hazard-id',      number:'4.1',  name:'Hazard Identification Form',  category:'Safety',  icon:'⚠️' }
+    { id:'morning-huddle', number:'1.9',  name:'Hazard Identification',              category:'Safety',   icon:'&#9728;&#65039;' },
+    { id:'site-safety',    number:'2.0',  name:'Site Safety Inspection',      category:'Safety',  icon:'&#129462;'       },
+    { id:'pre-site',       number:'3.2',  name:'Pre-Site Inspection',         category:'Safety',  icon:'&#128203;'       },
+    { id:'concrete-pump',  number:'3.01', name:'PSI &#8211; Concrete Pump Operator', category:'PSI', icon:'&#127959;&#65039;' },
+    // Future forms — uncomment and add a builder function to enable:
+    // { id:'tower-crane',  number:'6.2',  name:'Tower Crane Inspection Log',  category:'Safety',  icon:'&#129354;' },
+    // { id:'boom-lift',    number:'2.5',  name:'Boom Lift Daily Inspection',  category:'Safety',  icon:'&#128736;' },
+    // { id:'scissor-lift', number:'2.8',  name:'Scissor Lift Inspection',     category:'Safety',  icon:'&#128295;' },
+    // { id:'orientation',  number:'1.8',  name:'Site Specific Orientation',   category:'HR',      icon:'&#128101;' },
 ];
+
 // Lookup used by openForm() and collectData()
 const FORM_META = Object.fromEntries(
-FORM_CATALOG.map(f => [f.id, { number: f.number, name: f.name.replace(/–/g, '–') }])
+    FORM_CATALOG.map(f => [f.id, { number: f.number, name: f.name.replace(/&#8211;/g, '–') }])
 );
+
 // --- Helpers ---
 const now = new Date();
 const daysAgo = n => { const d = new Date(now); d.setDate(d.getDate() - n); return d; };
+
 function fmtDate(iso) {
-return new Intl.DateTimeFormat(LOCALE, { dateStyle:'medium', timeStyle:'short' }).format(new Date(iso));
+    return new Intl.DateTimeFormat(LOCALE, { dateStyle:'medium', timeStyle:'short' }).format(new Date(iso));
 }
 function dateNow() {
-return now.toISOString().slice(0,16);
+    return now.toISOString().slice(0,16);
 }
 function getRiskClass(v) {
-if (v === 'Good') return 'risk-good';
-if (v === 'Low Risk') return 'risk-low';
-if (v === 'Medium Risk') return 'risk-medium';
-if (v === 'High Risk') return 'risk-high';
-return '';
+    if (v === 'Good') return 'risk-good';
+    if (v === 'Low Risk') return 'risk-low';
+    if (v === 'Medium Risk') return 'risk-medium';
+    if (v === 'High Risk') return 'risk-high';
+    return '';
 }
 function getIndClass(v) {
-if (v === 'Good') return 'ind-good';
-if (v === 'Low Risk') return 'ind-low';
-if (v === 'Medium Risk') return 'ind-medium';
-if (v === 'High Risk') return 'ind-high';
-return '';
+    if (v === 'Good') return 'ind-good';
+    if (v === 'Low Risk') return 'ind-low';
+    if (v === 'Medium Risk') return 'ind-medium';
+    if (v === 'High Risk') return 'ind-high';
+    return '';
 }
 function projectOpts() {
-return PROJECTS.map(p => `<option value="${p}">${p}</option>`).join('');
+    return PROJECTS.map(p => `<option value="${p}">${p}</option>`).join('');
 }
 function workerOpts() {
-return WORKERS.map(w => `<option value="${w}">${w}</option>`).join('');
+    return WORKERS.map(w => `<option value="${w}">${w}</option>`).join('');
 }
+
 // --- State ---
 let currentFormId = null;
 let lastSubmission = null;
+
 // --- Views ---
 var _homeQuery = '';
 var _homeCat   = 'All';
+
 function renderHome() {
-var cats = ['All', ...new Set(FORM_CATALOG.map(f => f.category))];
-var pillsHTML = cats.map(c => {
-var active = c === _homeCat ? ' active' : '';
-return `<button class="cat-pill${active}" onclick="setCat('${c}')">${c}</button>`;
-}).join('');
+    var cats = ['All', ...new Set(FORM_CATALOG.map(f => f.category))];
+    var pillsHTML = cats.map(c => {
+        var active = c === _homeCat ? ' active' : '';
+        return `<button class="cat-pill${active}" onclick="setCat('${c}')">${c}</button>`;
+    }).join('');
 
-document.getElementById('app').innerHTML = `
-<h2 class="home-title">${L.select}</h2>
-<div class="search-wrap">
-  <span class="search-icon">&#128269;</span>
-  <input class="search-input" type="search" placeholder="Search forms&#8230;"
-         value="${_homeQuery.replace(/"/g, '&quot;')}"
-         oninput="setQuery(this.value)">
-</div>
-<div class="cat-pills">${pillsHTML}</div>
-<div class="form-list" id="form-list"></div>`;
-
-renderFormList();
-}
-function renderFormList() {
-var q = _homeQuery.toLowerCase().trim();
-var filtered = FORM_CATALOG.filter(f => {
-var matchCat = _homeCat === 'All' || f.category === _homeCat;
-var matchQ   = !q || f.name.toLowerCase().includes(q) || f.category.toLowerCase().includes(q) || f.number.includes(q);
-return matchCat && matchQ;
-});
-
-var list = document.getElementById('form-list');
-if (!list) return;
-if (filtered.length === 0) {
-    list.innerHTML = `<div class="no-results">No forms match &#8220;${_homeQuery}&#8221;</div>`;
-    return;
-}
-list.innerHTML = filtered.map(f => `
-<div class="form-row" onclick="openForm('${f.id}')">
-  <div class="fr-icon">${f.icon}</div>
-  <div class="fr-body">
-    <div class="fr-name">${f.name}</div>
-    <div class="fr-meta">
-      <span class="fr-number">${f.number}</span>
-      <span class="fr-cat">${f.category}</span>
+    document.getElementById('app').innerHTML = `
+    <h2 class="home-title">${L.select}</h2>
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input class="search-input" type="search" placeholder="Search forms&#8230;"
+             value="${_homeQuery.replace(/"/g, '&quot;')}"
+             oninput="setQuery(this.value)">
     </div>
-  </div>
-  <div class="fr-arrow">&#8250;</div>
-</div>`).join('');
+    <div class="cat-pills">${pillsHTML}</div>
+    <div class="form-list" id="form-list"></div>`;
+
+    renderFormList();
 }
+
+function renderFormList() {
+    var q = _homeQuery.toLowerCase().trim();
+    var filtered = FORM_CATALOG.filter(f => {
+        var matchCat = _homeCat === 'All' || f.category === _homeCat;
+        var matchQ   = !q || f.name.toLowerCase().includes(q) || f.category.toLowerCase().includes(q) || f.number.includes(q);
+        return matchCat && matchQ;
+    });
+
+    var list = document.getElementById('form-list');
+    if (!list) return;
+    if (filtered.length === 0) {
+        list.innerHTML = `<div class="no-results">No forms match &#8220;${_homeQuery}&#8221;</div>`;
+        return;
+    }
+    list.innerHTML = filtered.map(f => `
+    <div class="form-row" onclick="openForm('${f.id}')">
+      <div class="fr-icon">${f.icon}</div>
+      <div class="fr-body">
+        <div class="fr-name">${f.name}</div>
+        <div class="fr-meta">
+          <span class="fr-number">${f.number}</span>
+          <span class="fr-cat">${f.category}</span>
+        </div>
+      </div>
+      <div class="fr-arrow">&#8250;</div>
+    </div>`).join('');
+}
+
 function setQuery(val) { _homeQuery = val; renderFormList(); }
 function setCat(cat)   { _homeCat = cat; renderHome(); }
+
 function renderSuccess() {
-const s = lastSubmission;
-document.getElementById('app').innerHTML =      `<div class="success-view">       <div class="success-icon">&#9989;</div>       <h2>${L.successTitle}</h2>       <p>${L.successMsg}</p>       <div class="success-meta">         <div><span>${L.form}: </span><strong>${s.formName}</strong></div>         <div><span>${L.by}: </span><strong>${s.worker}</strong></div>         <div><span>${L.project}: </span><strong>${s.project || '—'}</strong></div>         <div><span>${L.time}: </span><strong>${fmtDate(s.submittedAt)}</strong></div>       </div>       <button class="cw-btn" style="max-width:280px" onclick="renderHome()">${L.another}</button>     </div>`;
+    const s = lastSubmission;
+    document.getElementById('app').innerHTML = `
+    <div class="success-view">
+      <div class="success-icon">&#9989;</div>
+      <h2>${L.successTitle}</h2>
+      <p>${L.successMsg}</p>
+      <div class="success-meta">
+        <div><span>${L.form}: </span><strong>${s.formName}</strong></div>
+        <div><span>${L.by}: </span><strong>${s.worker}</strong></div>
+        <div><span>${L.project}: </span><strong>${s.project || '—'}</strong></div>
+        <div><span>${L.time}: </span><strong>${fmtDate(s.submittedAt)}</strong></div>
+      </div>
+      <button class="cw-btn" style="max-width:280px" onclick="renderHome()">${L.another}</button>
+    </div>`;
 }
+
 // ============================================================
 // FORM: Morning Huddle (1.9)
 // ============================================================
 function buildMorningHuddle() {
-return `<form id="form-data" onsubmit="return false">       <div class="form-section">         <div class="section-title">Job Details</div>         <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>         <div class="field-group"><label class="field-label">Project</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>         <div class="field-group"><label class="field-label">Date / Time</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>         <div class="field-group"><label class="field-label">Weather Conditions / Temperature (Today and Tomorrow)</label><input type="text" class="field-input" name="weather" placeholder="e.g. Clear, 12&#176;C / Scattered cloud tomorrow"></div>       </div>       <div class="form-section">         <div class="section-title">Daily Briefing</div>         <div class="field-group"><label class="field-label">Daily Difference</label><textarea class="field-textarea" name="daily_diff" placeholder="Key changes from yesterday&#8230;"></textarea></div>         <div class="field-group"><label class="field-label">Safety Red Flags</label><textarea class="field-textarea" name="safety_flags" placeholder="Any safety concerns to flag&#8230;"></textarea></div>         <div class="field-group"><label class="field-label">Quality Red Flags</label><textarea class="field-textarea" name="quality_flags" placeholder="Any quality concerns to flag&#8230;"></textarea></div>       </div>       <div class="form-section">         <div class="section-title">Activities</div>         <div class="field-group"><label class="field-label">Forming / Stripping / Pouring Activities</label><textarea class="field-textarea" name="forming"></textarea></div>         <div class="field-group"><label class="field-label">Tower Crane Activities / Deliveries</label><textarea class="field-textarea" name="crane"></textarea></div>         <div class="field-group"><label class="field-label">Patchers Activities</label><textarea class="field-textarea" name="patchers"></textarea></div>       </div>       <div class="form-section">         <div class="section-title">Attachments</div>         <div class="field-group">           <label class="field-label">${L.upload}</label>           <div class="upload-zone" onclick="document.getElementById('mh-upload').click()">             <input type="file" id="mh-upload" name="pdf" accept=".pdf,image/*" onchange="handleFile(this)">             <div class="upload-zone-icon">&#128206;</div>             <div class="upload-zone-text">${L.chooseFile} — PDF or image</div>             <div class="upload-filename" id="upload-name"></div>           </div>         </div>       </div>       <div class="submit-row">         <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>         <button class="cw-btn" onclick="submitForm()">${L.submit}</button>       </div>     </form>`;
+    return `<form id="form-data" onsubmit="return false">
+      <div class="form-section">
+        <div class="section-title">Job Details</div>
+        <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Project</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Date / Time</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>
+        <div class="field-group"><label class="field-label">Weather Conditions / Temperature (Today and Tomorrow)</label><input type="text" class="field-input" name="weather" placeholder="e.g. Clear, 12&#176;C / Scattered cloud tomorrow"></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Daily Briefing</div>
+        <div class="field-group"><label class="field-label">Daily Difference</label><textarea class="field-textarea" name="daily_diff" placeholder="Key changes from yesterday&#8230;"></textarea></div>
+        <div class="field-group"><label class="field-label">Safety Red Flags</label><textarea class="field-textarea" name="safety_flags" placeholder="Any safety concerns to flag&#8230;"></textarea></div>
+        <div class="field-group"><label class="field-label">Quality Red Flags</label><textarea class="field-textarea" name="quality_flags" placeholder="Any quality concerns to flag&#8230;"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Activities</div>
+        <div class="field-group"><label class="field-label">Forming / Stripping / Pouring Activities</label><textarea class="field-textarea" name="forming"></textarea></div>
+        <div class="field-group"><label class="field-label">Tower Crane Activities / Deliveries</label><textarea class="field-textarea" name="crane"></textarea></div>
+        <div class="field-group"><label class="field-label">Patchers Activities</label><textarea class="field-textarea" name="patchers"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Attachments</div>
+        <div class="field-group">
+          <label class="field-label">${L.upload}</label>
+          <div class="upload-zone" onclick="document.getElementById('mh-upload').click()">
+            <input type="file" id="mh-upload" name="pdf" accept=".pdf,image/*" onchange="handleFile(this)">
+            <div class="upload-zone-icon">&#128206;</div>
+            <div class="upload-zone-text">${L.chooseFile} — PDF or image</div>
+            <div class="upload-filename" id="upload-name"></div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
+        <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
+      </div>
+    </form>`;
 }
+
 // ============================================================
 // FORM: Site Safety Inspection (2.0)
 // ============================================================
 const AUDIT_ITEMS = [
-'Housekeeping / Entretien menager',
-'Guardrail / Garde-Corps',
-'Ladders / Echelles',
-'Access, Egress / Acces, sortie',
-'Fall Arrest / Systeme Anti-Chute (Equipment/SRLs)',
-'Lighting / La lumiere',
-'Openings — Covered / Ouvertures—Couverts',
-'Signs — Barricades — Bumpline / Ligne d\'avertissement',
-'Heavy-Mobile Equipment / Equipement lourd mobile',
-'Elevated Working Platforms / Plateforme de travail surelevees',
-'Tools and Equipment / Outils et equipement',
-'P.P.E. / E.P.I.',
-'Hoisting & Rigging / Operation de levage',
-'Traffic Control / Controle routier',
-'Electrical / electrique — GFCI',
-'Material Handling (stretching) / Manipulation des materiaux',
-'Overhead Hazards / Risques aeriens',
-'Safety Net / Filet de securite',
-'BR Platforms / Scaffolds / Echafaudage',
-'Fly Form / Formes volantes',
-'Noise Exposure / Exposition au bruit',
-'Spill Kit / Trousse de deversement',
-'Pump Set-Up / Installation de Pompe',
-'Loading Platform / Plateforme de chargement',
-'Concrete Anchor Straps / Sangles d\'ancrage en Beton',
-'Skydeck / Trio',
-'Red Bolt / Boulons rouges',
-'Safety Reg. (OHSA) / Reg. de Securite du QC.',
-'First-Aid Kit Inspection / Trousse de Premier Soins',
-'Fire Extinguisher Inspection / Extincteur de Feu',
-'Wash-Up Facilities / Installations sanitaire',
-'Site Trailer / Roulotte de chantier',
-'Other / Autre',
+    'Housekeeping / Entretien menager',
+    'Guardrail / Garde-Corps',
+    'Ladders / Echelles',
+    'Access, Egress / Acces, sortie',
+    'Fall Arrest / Systeme Anti-Chute (Equipment/SRLs)',
+    'Lighting / La lumiere',
+    'Openings — Covered / Ouvertures—Couverts',
+    'Signs — Barricades — Bumpline / Ligne d\'avertissement',
+    'Heavy-Mobile Equipment / Equipement lourd mobile',
+    'Elevated Working Platforms / Plateforme de travail surelevees',
+    'Tools and Equipment / Outils et equipement',
+    'P.P.E. / E.P.I.',
+    'Hoisting & Rigging / Operation de levage',
+    'Traffic Control / Controle routier',
+    'Electrical / electrique — GFCI',
+    'Material Handling (stretching) / Manipulation des materiaux',
+    'Overhead Hazards / Risques aeriens',
+    'Safety Net / Filet de securite',
+    'BR Platforms / Scaffolds / Echafaudage',
+    'Fly Form / Formes volantes',
+    'Noise Exposure / Exposition au bruit',
+    'Spill Kit / Trousse de deversement',
+    'Pump Set-Up / Installation de Pompe',
+    'Loading Platform / Plateforme de chargement',
+    'Concrete Anchor Straps / Sangles d\'ancrage en Beton',
+    'Skydeck / Trio',
+    'Red Bolt / Boulons rouges',
+    'Safety Reg. (OHSA) / Reg. de Securite du QC.',
+    'First-Aid Kit Inspection / Trousse de Premier Soins',
+    'Fire Extinguisher Inspection / Extincteur de Feu',
+    'Wash-Up Facilities / Installations sanitaire',
+    'Site Trailer / Roulotte de chantier',
+    'Other / Autre',
 ];
-function buildSiteSafety() {
-const auditRows = AUDIT_ITEMS.map((label, i) =>       `<div class="audit-item" id="audit_wrap_${i}">         <div class="audit-top">           <span class="audit-label">${i + 1}. ${label}</span>           <div class="audit-indicator" id="audit_ind_${i}"></div>           <select class="audit-select" name="audit_${i}" onchange="updateRisk(${i},this.value)">             ${RISK_OPTIONS.map(o =>`<option value="${o}">${o || '— select —'}</option>`).join('')}           </select>         </div>         <textarea class="audit-notes" name="audit_${i}_notes" placeholder="Notes&#8230;"></textarea>       </div>`).join('');
 
-return `<form id="form-data" onsubmit="return false">
-  <div class="form-section">
-    <div class="section-title">Header</div>
-    <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>
-    <div class="field-group"><label class="field-label">Supervisor / Superviseur</label><input type="text" class="field-input" name="supervisor" placeholder="Supervisor name"></div>
-    <div class="field-group"><label class="field-label">Client / Site</label><input type="text" class="field-input" name="client"></div>
-    <div class="field-group"><label class="field-label">Project</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
-    <div class="field-group"><label class="field-label">Date Inspection Conducted</label><input type="date" class="field-input" name="date" value="${now.toISOString().slice(0,10)}"></div>
-    <div class="field-group"><label class="field-label">Temperature / Temperature</label><div class="field-row"><input type="number" class="field-input" name="temperature" placeholder="0"><span class="field-suffix">&#176;C</span></div></div>
-    <div class="field-group"><label class="field-label">Personnel on Site / Nombre de personnel sur le chantier</label><input type="number" class="field-input" name="personnel" min="0" placeholder="0"></div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Audit &#8212; Inspected Items / Elements inspectes</div>
-    ${auditRows}
-  </div>
-  <div class="form-section">
-    <div class="section-title">First-Aid Kit / Trousse de Premier Soins (15&#8211;200 personnel)</div>
-    <div class="checkbox-list">
-      <label class="checkbox-item"><input type="checkbox" name="fa_kit"> First-Aid Kit / Trousse de Premier Soins</label>
-      <label class="checkbox-item"><input type="checkbox" name="fa_inventory"> Checklist for Inventory completed and up to date</label>
-    </div>
-    <div class="mt8"><button type="button" class="cw-badge-btn warning">Failed / Echoue</button></div>
-    <div class="field-group mt12"><label class="field-label">Notes</label><textarea class="field-textarea" name="fa_notes"></textarea></div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Fire Extinguisher / Extincteur de Feu</div>
-    <label class="checkbox-item"><input type="checkbox" name="fire_ext"> Fire Extinguisher / Extincteur de Feu</label>
-    <div class="mt8"><button type="button" class="cw-badge-btn warning">Failed / Echoue</button></div>
-    <div class="field-group mt12"><label class="field-label">Notes</label><textarea class="field-textarea" name="fire_notes"></textarea></div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Attachments</div>
-    <div class="field-group">
-      <label class="field-label">${L.upload}</label>
-      <div class="upload-zone" onclick="document.getElementById('ss-upload').click()">
-        <input type="file" id="ss-upload" name="pdf" accept=".pdf,image/*" onchange="handleFile(this)">
-        <div class="upload-zone-icon">&#128206;</div>
-        <div class="upload-zone-text">${L.chooseFile} — PDF or image</div>
-        <div class="upload-filename" id="upload-name"></div>
+function buildSiteSafety() {
+    const auditRows = AUDIT_ITEMS.map((label, i) => `
+      <div class="audit-item" id="audit_wrap_${i}">
+        <div class="audit-top">
+          <span class="audit-label">${i + 1}. ${label}</span>
+          <div class="audit-indicator" id="audit_ind_${i}"></div>
+          <select class="audit-select" name="audit_${i}" onchange="updateRisk(${i},this.value)">
+            ${RISK_OPTIONS.map(o => `<option value="${o}">${o || '&#8212; select &#8212;'}</option>`).join('')}
+          </select>
+        </div>
+        <textarea class="audit-notes" name="audit_${i}_notes" placeholder="Notes&#8230;"></textarea>
+      </div>`).join('');
+
+    return `<form id="form-data" onsubmit="return false">
+      <div class="form-section">
+        <div class="section-title">Header</div>
+        <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Supervisor / Superviseur</label><input type="text" class="field-input" name="supervisor" placeholder="Supervisor name"></div>
+        <div class="field-group"><label class="field-label">Client / Site</label><input type="text" class="field-input" name="client"></div>
+        <div class="field-group"><label class="field-label">Project</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Date Inspection Conducted</label><input type="date" class="field-input" name="date" value="${now.toISOString().slice(0,10)}"></div>
+        <div class="field-group"><label class="field-label">Temperature / Temperature</label><div class="field-row"><input type="number" class="field-input" name="temperature" placeholder="0"><span class="field-suffix">&#176;C</span></div></div>
+        <div class="field-group"><label class="field-label">Personnel on Site / Nombre de personnel sur le chantier</label><input type="number" class="field-input" name="personnel" min="0" placeholder="0"></div>
       </div>
-    </div>
-  </div>
-  <div class="submit-row">
-    <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
-    <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
-  </div>
-</form>`;
+      <div class="form-section">
+        <div class="section-title">Audit &#8212; Inspected Items / Elements inspectes</div>
+        ${auditRows}
+      </div>
+      <div class="form-section">
+        <div class="section-title">First-Aid Kit / Trousse de Premier Soins (15&#8211;200 personnel)</div>
+        <div class="checkbox-list">
+          <label class="checkbox-item"><input type="checkbox" name="fa_kit"> First-Aid Kit / Trousse de Premier Soins</label>
+          <label class="checkbox-item"><input type="checkbox" name="fa_inventory"> Checklist for Inventory completed and up to date</label>
+        </div>
+        <div class="mt8"><button type="button" class="cw-badge-btn warning">Failed / Echoue</button></div>
+        <div class="field-group mt12"><label class="field-label">Notes</label><textarea class="field-textarea" name="fa_notes"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Fire Extinguisher / Extincteur de Feu</div>
+        <label class="checkbox-item"><input type="checkbox" name="fire_ext"> Fire Extinguisher / Extincteur de Feu</label>
+        <div class="mt8"><button type="button" class="cw-badge-btn warning">Failed / Echoue</button></div>
+        <div class="field-group mt12"><label class="field-label">Notes</label><textarea class="field-textarea" name="fire_notes"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Attachments</div>
+        <div class="field-group">
+          <label class="field-label">${L.upload}</label>
+          <div class="upload-zone" onclick="document.getElementById('ss-upload').click()">
+            <input type="file" id="ss-upload" name="pdf" accept=".pdf,image/*" onchange="handleFile(this)">
+            <div class="upload-zone-icon">&#128206;</div>
+            <div class="upload-zone-text">${L.chooseFile} — PDF or image</div>
+            <div class="upload-filename" id="upload-name"></div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
+        <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
+      </div>
+    </form>`;
 }
+
 // ============================================================
 // FORM: Pre-Site Inspection (3.2)
 // ============================================================
 const PSI_TASKS = [
-'Formwork / Coffrage',
-'Installing Peri/Robosto System / Installation du systeme Peri/Robosto',
-'Placing Concrete / Pose du Beton',
-'Consolidation of concrete / Consolidation du beton',
-'Stripping / Decapage',
-'Concrete Finishing / Finition du beton',
-'Hoisting and Rigging / Levage et greement',
-'Flying Forms / Formes volantes',
-'Patching Concrete / Reparer le beton',
-'Chipping and Cutting Concrete / Ecaillage et coupage du beton',
-'Placing Boom Installation / Telescoping / Dismantling',
-'Concrete Pump Operation',
-'Masonry',
+    'Formwork / Coffrage',
+    'Installing Peri/Robosto System / Installation du systeme Peri/Robosto',
+    'Placing Concrete / Pose du Beton',
+    'Consolidation of concrete / Consolidation du beton',
+    'Stripping / Decapage',
+    'Concrete Finishing / Finition du beton',
+    'Hoisting and Rigging / Levage et greement',
+    'Flying Forms / Formes volantes',
+    'Patching Concrete / Reparer le beton',
+    'Chipping and Cutting Concrete / Ecaillage et coupage du beton',
+    'Placing Boom Installation / Telescoping / Dismantling',
+    'Concrete Pump Operation',
+    'Masonry',
 ];
 const PSI_ITEMS = [
-'Fall Arrest / Anti-Chute',
-'Head Protection / Protection de la tete',
-'Foot Protection / Protection des pieds',
-'Eye Protection / Protection de yeux',
-'Ear Protection / Protection auditive',
-'Respirator / Respirateur',
-'Hand Protection / Protection des mains',
-'Proper Clothing / Vetements appropries',
-'Electrical cords and tools condition',
-'Material Handling / Manutention',
-'Power Lines / Lignes electriques',
-'Propane Handling / Manutention du propane',
-'Weather / Meteo',
-'Clear Instruction Provided / Instructions claire fournie',
-'Heat Stress or Cold Exposure',
-'Ventilation',
-'MSDS / WHMIS / SIMDUT',
-'Noise / Bruit',
-'Lighting / Eclairage',
-'Dust / Poussiere',
-'Housekeeping / Entretient',
-'Other Trade / Autre metier',
-'Restricted Area / Zone restreinte',
-'Working Above Head / Travailler au dessus de la tete',
-'Repetitive Movement / Mouvement repetitif',
-'Protruding Nail / Clous saillants',
-'Concrete burn / Brulure de beton',
-'Guardrails / Garde-corps',
-'Bumpline / Cordons de securite',
-'Signs / Enseignes',
-'Ladders / Echelles',
-'Access / Acces',
-'Working Platform / Plateforme de travail',
-'Slip and Trip / Glisser et trebucher',
-'Hole Covering / Couverture des trous',
-'Traffic Control / Controle de la circulation',
-'Emergency Plan / Plan d\'urgence',
-'Stretch before / Etirements avant',
-'Working alone or communication / Travaille seul ou communication',
+    'Fall Arrest / Anti-Chute',
+    'Head Protection / Protection de la tete',
+    'Foot Protection / Protection des pieds',
+    'Eye Protection / Protection de yeux',
+    'Ear Protection / Protection auditive',
+    'Respirator / Respirateur',
+    'Hand Protection / Protection des mains',
+    'Proper Clothing / Vetements appropries',
+    'Electrical cords and tools condition',
+    'Material Handling / Manutention',
+    'Power Lines / Lignes electriques',
+    'Propane Handling / Manutention du propane',
+    'Weather / Meteo',
+    'Clear Instruction Provided / Instructions claire fournie',
+    'Heat Stress or Cold Exposure',
+    'Ventilation',
+    'MSDS / WHMIS / SIMDUT',
+    'Noise / Bruit',
+    'Lighting / Eclairage',
+    'Dust / Poussiere',
+    'Housekeeping / Entretient',
+    'Other Trade / Autre metier',
+    'Restricted Area / Zone restreinte',
+    'Working Above Head / Travailler au dessus de la tete',
+    'Repetitive Movement / Mouvement repetitif',
+    'Protruding Nail / Clous saillants',
+    'Concrete burn / Brulure de beton',
+    'Guardrails / Garde-corps',
+    'Bumpline / Cordons de securite',
+    'Signs / Enseignes',
+    'Ladders / Echelles',
+    'Access / Acces',
+    'Working Platform / Plateforme de travail',
+    'Slip and Trip / Glisser et trebucher',
+    'Hole Covering / Couverture des trous',
+    'Traffic Control / Controle de la circulation',
+    'Emergency Plan / Plan d\'urgence',
+    'Stretch before / Etirements avant',
+    'Working alone or communication / Travaille seul ou communication',
 ];
+
 function buildPreSite() {
-const tasksHTML = PSI_TASKS.map((lbl, i) =>`<label class="checkbox-item"><input type="checkbox" name="task_${i}"> ${lbl}</label>).join('');
-const itemsHTML = PSI_ITEMS.map((lbl, i) =>`<tr><td>${lbl}</td><td><input type="radio" name="item_${i}" value="Yes"></td><td><input type="radio" name="item_${i}" value="No"></td><td><input type="radio" name="item_${i}" value="NA"></td></tr>`).join('');
-return `<form id="form-data" onsubmit="return false">       <div class="form-section">         <div class="section-title">Header</div>         <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>         <div class="field-group"><label class="field-label">Date and Time / Date et heure</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>         <div class="field-group"><label class="field-label">Project / Projet</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>         <div class="field-group"><label class="field-label">Location of Project / Emplacement du projet</label><input type="text" class="field-input" name="location" placeholder="Enter a location"></div>         <div class="field-group"><label class="field-label">Work Area / Zone de travail</label><input type="text" class="field-input" name="work_area"></div>       </div>       <div class="form-section">         <div class="section-title">Task / Tache</div>         <div class="checkbox-list">${tasksHTML}</div>         <div class="field-group mt12"><label class="field-label">Other / Autre</label><textarea class="field-textarea" name="task_other"></textarea></div>       </div>       <div class="form-section">         <div class="section-title">Items Reviewed / Elements revises</div>         <div class="overflow-x">           <table class="radio-table">             <thead><tr><th>Item</th><th>Yes / Oui</th><th>No / Non</th><th>N/A</th></tr></thead>             <tbody>${itemsHTML}</tbody>           </table>         </div>       </div>       <div class="form-section">         <div class="section-title">Hazards / Dangers</div>         <div class="field-group"><label class="field-label">Hazard Identification / Identification des dangers</label><textarea class="field-textarea" name="hazard_id"></textarea></div>         <div class="field-group"><label class="field-label">Hazard Control / Controle des dangers</label><textarea class="field-textarea" name="hazard_ctrl"></textarea></div>       </div>       <div class="form-section">         <div class="section-title">Employee Signature</div>         <div class="field-group"><label class="field-label">Employee Name and Number / Numero et nom de l\'employe</label><input type="text" class="field-input" name="emp_name"></div>         <div class="field-group">           <label class="field-label">Signature</label>           <div class="sig-wrap">             <canvas class="sig-canvas" id="sig-canvas" width="580" height="100"></canvas>             <div class="sig-footer"><span class="sig-hint">${L.signHere}</span><button type="button" class="sig-clear" onclick="clearSig()">${L.clear}</button></div>           </div>         </div>       </div>       <div class="submit-row">         <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>         <button class="cw-btn" onclick="submitForm()">${L.submit}</button>       </div>     </form>`;
+    const tasksHTML = PSI_TASKS.map((lbl, i) =>
+        `<label class="checkbox-item"><input type="checkbox" name="task_${i}"> ${lbl}</label>`).join('');
+    const itemsHTML = PSI_ITEMS.map((lbl, i) =>
+        `<tr><td>${lbl}</td><td><input type="radio" name="item_${i}" value="Yes"></td><td><input type="radio" name="item_${i}" value="No"></td><td><input type="radio" name="item_${i}" value="NA"></td></tr>`).join('');
+    return `<form id="form-data" onsubmit="return false">
+      <div class="form-section">
+        <div class="section-title">Header</div>
+        <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Date and Time / Date et heure</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>
+        <div class="field-group"><label class="field-label">Project / Projet</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Location of Project / Emplacement du projet</label><input type="text" class="field-input" name="location" placeholder="Enter a location"></div>
+        <div class="field-group"><label class="field-label">Work Area / Zone de travail</label><input type="text" class="field-input" name="work_area"></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Task / Tache</div>
+        <div class="checkbox-list">${tasksHTML}</div>
+        <div class="field-group mt12"><label class="field-label">Other / Autre</label><textarea class="field-textarea" name="task_other"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Items Reviewed / Elements revises</div>
+        <div class="overflow-x">
+          <table class="radio-table">
+            <thead><tr><th>Item</th><th>Yes / Oui</th><th>No / Non</th><th>N/A</th></tr></thead>
+            <tbody>${itemsHTML}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Hazards / Dangers</div>
+        <div class="field-group"><label class="field-label">Hazard Identification / Identification des dangers</label><textarea class="field-textarea" name="hazard_id"></textarea></div>
+        <div class="field-group"><label class="field-label">Hazard Control / Controle des dangers</label><textarea class="field-textarea" name="hazard_ctrl"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Employee Signature</div>
+        <div class="field-group"><label class="field-label">Employee Name and Number / Numero et nom de l'employe</label><input type="text" class="field-input" name="emp_name"></div>
+        <div class="field-group">
+          <label class="field-label">Signature</label>
+          <div class="sig-wrap">
+            <canvas class="sig-canvas" id="sig-canvas" width="580" height="100"></canvas>
+            <div class="sig-footer"><span class="sig-hint">${L.signHere}</span><button type="button" class="sig-clear" onclick="clearSig()">${L.clear}</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
+        <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
+      </div>
+    </form>`;
 }
+
 // ============================================================
 // FORM: PSI – Concrete Pump Operator (3.01)
 // ============================================================
 const CP_TASKS = [
-'Position and stabilize the pump unit / Positionner et stabiliser l\'unite de pompage',
-'Prime the concrete pump and lines / Amorcer la pompe a beton et les conduites',
-'Operate concrete pump truck and placing equipment',
-'Monitor pumping operations / Surveiller les operations de pompage',
-'Clean and wash-out the concrete pump and lines / Nettoyer et laver la pompe a beton',
-'Placing Boom Operation / Operation de fleche de distribution',
+    'Position and stabilize the pump unit / Positionner et stabiliser l\'unite de pompage',
+    'Prime the concrete pump and lines / Amorcer la pompe a beton et les conduites',
+    'Operate concrete pump truck and placing equipment',
+    'Monitor pumping operations / Surveiller les operations de pompage',
+    'Clean and wash-out the concrete pump and lines / Nettoyer et laver la pompe a beton',
+    'Placing Boom Operation / Operation de fleche de distribution',
 ];
 const CP_HAZARDS = [
-'Working at Heights (Ladders, Slab) / Travail en hauteur',
-'Open Excavation / Excavation',
-'Falling Objects (Loads, Tools, Stacked Material)',
-'Moving Vehicle, Machinery or Equipment',
-'High-Energy Release (Hose-Whip, Pipe Blowout)',
-'Overhead Powerlines / Lignes electriques aeriennes',
-'Overlapping Equipment / Chevauchement d\'equipements',
-'Electrical Hazard (Pump\'s electrical components)',
-'Compressed Air, Blowout / Air comprime, expulsion',
-'High Pressure Fluid Injection / Injection de fluide a haute pression',
-'Using Tools and/or Equipment (Possible Defects)',
-'Moving Parts / Pinch Points (Boom sections, Outriggers)',
-'Sharp Surfaces (Rebar, Nails) / Surfaces tranchantes',
-'Noise Exposure (Over 85 dB) / Exposition au bruit',
-'Hazardous Material, Spills (Concrete, oils, gas)',
-'Uneven Ground / Sol denivele',
-'Slippery Surfaces (Spills, Ice, Water)',
-'Clutter or Obstacles / Encombrement ou obstacles',
-'Inclement Weather (Snow, ice, rain, wind, lightning)',
-'Heat or Cold Exposure / Exposition a la chaleur ou au froid',
-'Congested or Restricted Movement',
-'Material Handling, Heavy Lifting, Awkward Position',
-'Other Trades / Autres metiers',
+    'Working at Heights (Ladders, Slab) / Travail en hauteur',
+    'Open Excavation / Excavation',
+    'Falling Objects (Loads, Tools, Stacked Material)',
+    'Moving Vehicle, Machinery or Equipment',
+    'High-Energy Release (Hose-Whip, Pipe Blowout)',
+    'Overhead Powerlines / Lignes electriques aeriennes',
+    'Overlapping Equipment / Chevauchement d\'equipements',
+    'Electrical Hazard (Pump\'s electrical components)',
+    'Compressed Air, Blowout / Air comprime, expulsion',
+    'High Pressure Fluid Injection / Injection de fluide a haute pression',
+    'Using Tools and/or Equipment (Possible Defects)',
+    'Moving Parts / Pinch Points (Boom sections, Outriggers)',
+    'Sharp Surfaces (Rebar, Nails) / Surfaces tranchantes',
+    'Noise Exposure (Over 85 dB) / Exposition au bruit',
+    'Hazardous Material, Spills (Concrete, oils, gas)',
+    'Uneven Ground / Sol denivele',
+    'Slippery Surfaces (Spills, Ice, Water)',
+    'Clutter or Obstacles / Encombrement ou obstacles',
+    'Inclement Weather (Snow, ice, rain, wind, lightning)',
+    'Heat or Cold Exposure / Exposition a la chaleur ou au froid',
+    'Congested or Restricted Movement',
+    'Material Handling, Heavy Lifting, Awkward Position',
+    'Other Trades / Autres metiers',
 ];
 const CP_CONTROLS = [
-'Follow Traffic Control Plan / Respecter le plan de controle de la circulation',
-'Use Spotters / Utiliser des signaleurs',
-'Proper Setback from Excavation',
-'Maintain Safe Distance from Powerline',
-'Delineate Controlled Access Zone around the Pump Setup',
-'Install Environmental Spill Protection (poly) under pump',
-'Use Outrigger Pads, Check Ground Conditions and Levelness',
-'Set Up Outriggers with 3 Degrees of Level',
-'Use Appropriate Cribbing for Ground Conditions',
-'Attach Hose, Monitor Lines for Blockage',
-'Secure All Hanging Components at End of Boom',
-'Only Use System Components in Good Working Condition',
-'Never Open a Pressurized Pipeline',
-'Never Exceed Manufacturer\'s Weight Limit for the Boom',
+    'Follow Traffic Control Plan / Respecter le plan de controle de la circulation',
+    'Use Spotters / Utiliser des signaleurs',
+    'Proper Setback from Excavation',
+    'Maintain Safe Distance from Powerline',
+    'Delineate Controlled Access Zone around the Pump Setup',
+    'Install Environmental Spill Protection (poly) under pump',
+    'Use Outrigger Pads, Check Ground Conditions and Levelness',
+    'Set Up Outriggers with 3 Degrees of Level',
+    'Use Appropriate Cribbing for Ground Conditions',
+    'Attach Hose, Monitor Lines for Blockage',
+    'Secure All Hanging Components at End of Boom',
+    'Only Use System Components in Good Working Condition',
+    'Never Open a Pressurized Pipeline',
+    'Never Exceed Manufacturer\'s Weight Limit for the Boom',
 ];
 const CP_PPE = [
-'Hard Hat / Casque',
-'Glasses / Lunettes',
-'Steel-Toed Boots / Bottes avec cap d\'acier',
-'High-Visibility Clothing / Vetements haute visibilite',
-'Hearing Protection / Protection de l\'ouie',
-'Fall Protection Equipment / Equipement de protection contre les chutes',
+    'Hard Hat / Casque',
+    'Glasses / Lunettes',
+    'Steel-Toed Boots / Bottes avec cap d\'acier',
+    'High-Visibility Clothing / Vetements haute visibilite',
+    'Hearing Protection / Protection de l\'ouie',
+    'Fall Protection Equipment / Equipement de protection contre les chutes',
 ];
+
 function buildConcretePump() {
-const tasksHTML = CP_TASKS.map((lbl, i) =>`<label class="checkbox-item"><input type="checkbox" name="cp_task_${i}"> ${lbl}</label>`).join('');
-const hazardsHTML = CP_HAZARDS.map((lbl, i) =>`<tr><td>${lbl}</td><td><input type="radio" name="cp_haz_${i}" value="Applicable"></td><td><input type="radio" name="cp_haz_${i}" value="NA"></td></tr>`).join('');
-const controlsHTML = CP_CONTROLS.map((lbl, i) =>`<tr><td>${lbl}</td><td><input type="radio" name="cp_ctrl_${i}" value="Applicable"></td><td><input type="radio" name="cp_ctrl_${i}" value="NA"></td></tr>`).join('');
-const ppeHTML = CP_PPE.map((lbl, i) =>`<label class="checkbox-item"><input type="checkbox" name="cp_ppe_${i}"> ${lbl}</label>`).join('');
-return `<form id="form-data" onsubmit="return false">       <div class="form-section">         <div class="section-title">Header</div>         <div class="field-group"><label class="field-label">Operator / Operateur</label><select class="field-input" name="worker">${workerOpts()}</select></div>         <div class="field-group"><label class="field-label">Date and Time / Date et heure</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>         <div class="field-group"><label class="field-label">Project / Projet</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>         <div class="field-group"><label class="field-label">Project Supervisor / Superviseur du projet</label><input type="text" class="field-input" name="supervisor"></div>         <div class="field-group"><label class="field-label">Address (if rental) / Adresse (si location)</label><input type="text" class="field-input" name="address"></div>       </div>       <div class="form-section">         <div class="section-title">Task(s) / Taches</div>         <div class="checkbox-list">${tasksHTML}</div>       </div>       <div class="form-section">         <div class="section-title">Hazards / Dangers</div>         <div class="overflow-x">           <table class="applicable-table">             <thead><tr><th>Hazard</th><th>Applicable</th><th>Non-applicable</th></tr></thead>             <tbody>${hazardsHTML}</tbody>           </table>         </div>       </div>       <div class="form-section">         <div class="section-title">Safe Pump Set-Up Controls / Controles de securite</div>         <div class="overflow-x">           <table class="applicable-table">             <thead><tr><th>Control</th><th>Applicable</th><th>Non-applicable</th></tr></thead>             <tbody>${controlsHTML}</tbody>           </table>         </div>       </div>       <div class="form-section">         <div class="section-title">Mandatory PPE / EPI Obligatoire</div>         <div class="checkbox-list">${ppeHTML}</div>       </div>       <div class="form-section">         <div class="section-title">Site-Specific Conditions / Conditions specifiques au chantier</div>         <div class="field-group"><textarea class="field-textarea" name="site_conditions" rows="3"></textarea></div>       </div>       <div class="form-section">         <div class="section-title">Operator Signature / Signature de l\'operateur</div>         <div class="field-group">           <div class="sig-wrap">             <canvas class="sig-canvas" id="sig-canvas" width="580" height="100"></canvas>             <div class="sig-footer"><span class="sig-hint">${L.signHere}</span><button type="button" class="sig-clear" onclick="clearSig()">${L.clear}</button></div>           </div>         </div>       </div>       <div class="submit-row">         <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>         <button class="cw-btn" onclick="submitForm()">${L.submit}</button>       </div>     </form>`;
-}
-// ============================================================
-// FORM: Hazard Identification Form (4.1)
-// ============================================================
-function buildHazardId() {
-return `<form id="form-data" onsubmit="return false">
-  <div class="form-section">
-    <div class="section-title">Logistics Details</div>
-    <div class="field-group"><label class="field-label">Submitted By</label><select class="field-input" name="worker">${workerOpts()}</select></div>
-    <div class="field-group"><label class="field-label">Project</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
-    <div class="field-group"><label class="field-label">Date / Time Observed</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>
-    <div class="field-group"><label class="field-label">Specific Location / Area on Site</label><input type="text" class="field-input" name="location" placeholder="e.g. Near East Scaffolding, Level 3 Stairwell"></div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Hazard Assessment</div>
-    <div class="field-group"><label class="field-label">Description of Potential Hazard</label><textarea class="field-textarea" name="hazard_desc" placeholder="Describe the conditions or unsafe behaviors observed..."></textarea></div>
-    <div class="field-group">
-      <label class="field-label">Potential Risk Severity</label>
-      <select class="field-input" name="risk_level">
-        <option value="Low Risk">Low Risk — Minor structural or superficial issues</option>
-        <option value="Medium Risk">Medium Risk — Conditions that could cause non-critical injuries</option>
-        <option value="High Risk">High Risk — Immediate danger to health, life, or property</option>
-      </select>
-    </div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Pre-emptive Control Measures</div>
-    <div class="field-group"><label class="field-label">Recommended Pre-emptive Action / Mitigation Steps</label><textarea class="field-textarea" name="preemptive_measures" placeholder="What preventive steps should be taken immediately to bypass this hazard?..."></textarea></div>
-  </div>
-  <div class="form-section">
-    <div class="section-title">Attachments / Photos</div>
-    <div class="field-group">
-      <label class="field-label">${L.upload}</label>
-      <div class="upload-zone" onclick="document.getElementById('hz-upload').click()">
-        <input type="file" id="hz-upload" name="pdf" accept=".pdf,image/*" onchange="handleFile(this)">
-        <div class="upload-zone-icon">&#128206;</div>
-        <div class="upload-zone-text">${L.chooseFile} — Image or PDF document</div>
-        <div class="upload-filename" id="upload-name"></div>
+    const tasksHTML = CP_TASKS.map((lbl, i) =>
+        `<label class="checkbox-item"><input type="checkbox" name="cp_task_${i}"> ${lbl}</label>`).join('');
+    const hazardsHTML = CP_HAZARDS.map((lbl, i) =>
+        `<tr><td>${lbl}</td><td><input type="radio" name="cp_haz_${i}" value="Applicable"></td><td><input type="radio" name="cp_haz_${i}" value="NA"></td></tr>`).join('');
+    const controlsHTML = CP_CONTROLS.map((lbl, i) =>
+        `<tr><td>${lbl}</td><td><input type="radio" name="cp_ctrl_${i}" value="Applicable"></td><td><input type="radio" name="cp_ctrl_${i}" value="NA"></td></tr>`).join('');
+    const ppeHTML = CP_PPE.map((lbl, i) =>
+        `<label class="checkbox-item"><input type="checkbox" name="cp_ppe_${i}"> ${lbl}</label>`).join('');
+    return `<form id="form-data" onsubmit="return false">
+      <div class="form-section">
+        <div class="section-title">Header</div>
+        <div class="field-group"><label class="field-label">Operator / Operateur</label><select class="field-input" name="worker">${workerOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Date and Time / Date et heure</label><input type="datetime-local" class="field-input" name="datetime" value="${dateNow()}"></div>
+        <div class="field-group"><label class="field-label">Project / Projet</label><select class="field-input" name="project"><option value="">Select project&#8230;</option>${projectOpts()}</select></div>
+        <div class="field-group"><label class="field-label">Project Supervisor / Superviseur du projet</label><input type="text" class="field-input" name="supervisor"></div>
+        <div class="field-group"><label class="field-label">Address (if rental) / Adresse (si location)</label><input type="text" class="field-input" name="address"></div>
       </div>
-    </div>
-  </div>
-  <div class="submit-row">
-    <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
-    <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
-  </div>
-</form>`;
+      <div class="form-section">
+        <div class="section-title">Task(s) / Taches</div>
+        <div class="checkbox-list">${tasksHTML}</div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Hazards / Dangers</div>
+        <div class="overflow-x">
+          <table class="applicable-table">
+            <thead><tr><th>Hazard</th><th>Applicable</th><th>Non-applicable</th></tr></thead>
+            <tbody>${hazardsHTML}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Safe Pump Set-Up Controls / Controles de securite</div>
+        <div class="overflow-x">
+          <table class="applicable-table">
+            <thead><tr><th>Control</th><th>Applicable</th><th>Non-applicable</th></tr></thead>
+            <tbody>${controlsHTML}</tbody>
+          </table>
+        </div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Mandatory PPE / EPI Obligatoire</div>
+        <div class="checkbox-list">${ppeHTML}</div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Site-Specific Conditions / Conditions specifiques au chantier</div>
+        <div class="field-group"><textarea class="field-textarea" name="site_conditions" rows="3"></textarea></div>
+      </div>
+      <div class="form-section">
+        <div class="section-title">Operator Signature / Signature de l'operateur</div>
+        <div class="field-group">
+          <div class="sig-wrap">
+            <canvas class="sig-canvas" id="sig-canvas" width="580" height="100"></canvas>
+            <div class="sig-footer"><span class="sig-hint">${L.signHere}</span><button type="button" class="sig-clear" onclick="clearSig()">${L.clear}</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="submit-row">
+        <button class="cw-btn-secondary" onclick="saveDraft()">${L.draft}</button>
+        <button class="cw-btn" onclick="submitForm()">${L.submit}</button>
+      </div>
+    </form>`;
 }
+
 // ============================================================
 // Open a form
 // ============================================================
 function openForm(formId) {
-currentFormId = formId;
-const meta = FORM_META[formId];
-const builders = {
-'morning-huddle': buildMorningHuddle,
-'site-safety':    buildSiteSafety,
-'pre-site':       buildPreSite,
-'concrete-pump':  buildConcretePump,
-'hazard-id':      buildHazardId,
-};
-document.getElementById('app').innerHTML =      `<div class="cw-header">       <button class="cw-back-btn" onclick="renderHome()">&#8592;</button>       <h2>${meta.name}</h2>       <span class="form-badge">${meta.number}</span>     </div>     ${builders[formId]()}`;
+    currentFormId = formId;
+    const meta = FORM_META[formId];
+    const builders = {
+        'morning-huddle': buildMorningHuddle,
+        'site-safety':    buildSiteSafety,
+        'pre-site':       buildPreSite,
+        'concrete-pump':  buildConcretePump,
+    };
+    document.getElementById('app').innerHTML = `
+    <div class="cw-header">
+      <button class="cw-back-btn" onclick="renderHome()">&#8592;</button>
+      <h2>${meta.name}</h2>
+      <span class="form-badge">${meta.number}</span>
+    </div>
+    ${builders[formId]()}`;
 
-const canvas = document.getElementById('sig-canvas');
-if (canvas) initSigPad(canvas);
+    const canvas = document.getElementById('sig-canvas');
+    if (canvas) initSigPad(canvas);
 }
+
 // ============================================================
 // Risk colour update (Site Safety)
 // ============================================================
 function updateRisk(i, val) {
-document.getElementById('audit_wrap_' + i).className = 'audit-item ' + getRiskClass(val);
-document.getElementById('audit_ind_' + i).className  = 'audit-indicator ' + getIndClass(val);
+    document.getElementById('audit_wrap_' + i).className = 'audit-item ' + getRiskClass(val);
+    document.getElementById('audit_ind_' + i).className  = 'audit-indicator ' + getIndClass(val);
 }
+
 // ============================================================
 // Signature pad
 // ============================================================
 var sigCtx = null, sigDrawing = false;
 function getPos(e, canvas) {
-var r = canvas.getBoundingClientRect();
-var sx = canvas.width / r.width, sy = canvas.height / r.height;
-var cx = (e.clientX !== undefined ? e.clientX : e.touches[0].clientX);
-var cy = (e.clientY !== undefined ? e.clientY : e.touches[0].clientY);
-return [(cx - r.left) * sx, (cy - r.top) * sy];
+    var r = canvas.getBoundingClientRect();
+    var sx = canvas.width / r.width, sy = canvas.height / r.height;
+    var cx = (e.clientX !== undefined ? e.clientX : e.touches[0].clientX);
+    var cy = (e.clientY !== undefined ? e.clientY : e.touches[0].clientY);
+    return [(cx - r.left) * sx, (cy - r.top) * sy];
 }
 function initSigPad(canvas) {
-sigCtx = canvas.getContext('2d');
-sigCtx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--text').trim() || '#1f2937';
-sigCtx.lineWidth = 2; sigCtx.lineCap = 'round'; sigCtx.lineJoin = 'round';
-canvas.addEventListener('mousedown',  function(e){ sigDrawing=true; sigCtx.beginPath(); sigCtx.moveTo.apply(sigCtx,getPos(e,canvas)); });
-canvas.addEventListener('mousemove',  function(e){ if(!sigDrawing)return; sigCtx.lineTo.apply(sigCtx,getPos(e,canvas)); sigCtx.stroke(); });
-canvas.addEventListener('mouseup',    function(){ sigDrawing=false; });
-canvas.addEventListener('mouseleave', function(){ sigDrawing=false; });
-canvas.addEventListener('touchstart', function(e){ e.preventDefault(); sigDrawing=true; sigCtx.beginPath(); sigCtx.moveTo.apply(sigCtx,getPos(e,canvas)); }, {passive:false});
-canvas.addEventListener('touchmove',  function(e){ e.preventDefault(); if(!sigDrawing)return; sigCtx.lineTo.apply(sigCtx,getPos(e,canvas)); sigCtx.stroke(); }, {passive:false});
-canvas.addEventListener('touchend',   function(){ sigDrawing=false; });
+    sigCtx = canvas.getContext('2d');
+    sigCtx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--text').trim() || '#1f2937';
+    sigCtx.lineWidth = 2; sigCtx.lineCap = 'round'; sigCtx.lineJoin = 'round';
+    canvas.addEventListener('mousedown',  function(e){ sigDrawing=true; sigCtx.beginPath(); sigCtx.moveTo.apply(sigCtx,getPos(e,canvas)); });
+    canvas.addEventListener('mousemove',  function(e){ if(!sigDrawing)return; sigCtx.lineTo.apply(sigCtx,getPos(e,canvas)); sigCtx.stroke(); });
+    canvas.addEventListener('mouseup',    function(){ sigDrawing=false; });
+    canvas.addEventListener('mouseleave', function(){ sigDrawing=false; });
+    canvas.addEventListener('touchstart', function(e){ e.preventDefault(); sigDrawing=true; sigCtx.beginPath(); sigCtx.moveTo.apply(sigCtx,getPos(e,canvas)); }, {passive:false});
+    canvas.addEventListener('touchmove',  function(e){ e.preventDefault(); if(!sigDrawing)return; sigCtx.lineTo.apply(sigCtx,getPos(e,canvas)); sigCtx.stroke(); }, {passive:false});
+    canvas.addEventListener('touchend',   function(){ sigDrawing=false; });
 }
 function clearSig() { if(sigCtx) sigCtx.clearRect(0,0,sigCtx.canvas.width,sigCtx.canvas.height); }
+
 // ============================================================
 // File select
 // ============================================================
 function handleFile(input) {
-var el = document.getElementById('upload-name');
-if (el) el.textContent = input.files[0] ? '📄 ' + input.files[0].name : '';
+    var el = document.getElementById('upload-name');
+    if (el) el.textContent = input.files[0] ? '📄 ' + input.files[0].name : '';
 }
+
 // ============================================================
 // Collect + save
 // ============================================================
 function captureFormSnapshot() {
-var form = document.getElementById('form-data');
-if (!form) return null;
-// Serialize JS-set values into HTML attributes so cloneNode captures them
-form.querySelectorAll('input[type="text"],input[type="number"],input[type="date"],input[type="datetime-local"]').forEach(function(el) {
-el.setAttribute('value', el.value);
-});
-form.querySelectorAll('textarea').forEach(function(el) {
-el.textContent = el.value;
-});
-form.querySelectorAll('select').forEach(function(sel) {
-Array.from(sel.options).forEach(function(opt) {
-opt.value === sel.value ? opt.setAttribute('selected','') : opt.removeAttribute('selected');
-});
-});
-form.querySelectorAll('input[type="checkbox"],input[type="radio"]').forEach(function(el) {
-el.checked ? el.setAttribute('checked','') : el.removeAttribute('checked');
-});
-var clone = form.cloneNode(true);
-// Replace each canvas with a static img (preserves signature drawing)
-var canvases = form.querySelectorAll('canvas');
-clone.querySelectorAll('canvas').forEach(function(c, i) {
-var img = document.createElement('img');
-img.src = canvases[i] ? canvases[i].toDataURL('image/png') : '';
-img.className = 'sig-canvas';
-c.parentNode.replaceChild(img, c);
-});
-// Strip interactive/upload elements that don't print meaningfully
-clone.querySelectorAll('.submit-row, .sig-footer button, input[type="file"], .upload-zone-icon, .upload-zone-text').forEach(function(el){ el.remove(); });
-return clone.outerHTML;
+    var form = document.getElementById('form-data');
+    if (!form) return null;
+    // Serialize JS-set values into HTML attributes so cloneNode captures them
+    form.querySelectorAll('input[type="text"],input[type="number"],input[type="date"],input[type="datetime-local"]').forEach(function(el) {
+        el.setAttribute('value', el.value);
+    });
+    form.querySelectorAll('textarea').forEach(function(el) {
+        el.textContent = el.value;
+    });
+    form.querySelectorAll('select').forEach(function(sel) {
+        Array.from(sel.options).forEach(function(opt) {
+            opt.value === sel.value ? opt.setAttribute('selected','') : opt.removeAttribute('selected');
+        });
+    });
+    form.querySelectorAll('input[type="checkbox"],input[type="radio"]').forEach(function(el) {
+        el.checked ? el.setAttribute('checked','') : el.removeAttribute('checked');
+    });
+    var clone = form.cloneNode(true);
+    // Replace each canvas with a static img (preserves signature drawing)
+    var canvases = form.querySelectorAll('canvas');
+    clone.querySelectorAll('canvas').forEach(function(c, i) {
+        var img = document.createElement('img');
+        img.src = canvases[i] ? canvases[i].toDataURL('image/png') : '';
+        img.className = 'sig-canvas';
+        c.parentNode.replaceChild(img, c);
+    });
+    // Strip interactive/upload elements that don't print meaningfully
+    clone.querySelectorAll('.submit-row, .sig-footer button, input[type="file"], .upload-zone-icon, .upload-zone-text').forEach(function(el){ el.remove(); });
+    return clone.outerHTML;
 }
+
 function collectData(status) {
-var form = document.getElementById('form-data');
-if (!form) return null;
-var fd = new FormData(form), data = {};
-for (var pair of fd.entries()) data[pair[0]] = pair[1];
-return {
-id: Date.now(),
-formId: currentFormId,
-formName: FORM_META[currentFormId].name,
-formNumber: FORM_META[currentFormId].number,
-worker: data.worker || data.operator || WORKERS[0],
-project: data.project || '',
-submittedAt: new Date().toISOString(),
-status: status,
-flag: null,
-data: data,
-renderedHtml: captureFormSnapshot(),
-};
+    var form = document.getElementById('form-data');
+    if (!form) return null;
+    var fd = new FormData(form), data = {};
+    for (var pair of fd.entries()) data[pair[0]] = pair[1];
+    return {
+        id: Date.now(),
+        formId: currentFormId,
+        formName: FORM_META[currentFormId].name,
+        formNumber: FORM_META[currentFormId].number,
+        worker: data.worker || data.operator || WORKERS[0],
+        project: data.project || '',
+        submittedAt: new Date().toISOString(),
+        status: status,
+        flag: null,
+        data: data,
+        renderedHtml: captureFormSnapshot(),
+    };
 }
 function persist(sub) {
-var arr = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-arr.unshift(sub);
-localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
+    var arr = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    arr.unshift(sub);
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(arr));
 }
 function submitForm() {
-var sub = collectData('Complete');
-if (!sub) return;
-persist(sub); lastSubmission = sub; renderSuccess();
+    var sub = collectData('Complete');
+    if (!sub) return;
+    persist(sub); lastSubmission = sub; renderSuccess();
 }
 function saveDraft() {
-var sub = collectData('Draft');
-if (!sub) return;
-persist(sub); lastSubmission = sub; renderSuccess();
+    var sub = collectData('Draft');
+    if (!sub) return;
+    persist(sub); lastSubmission = sub; renderSuccess();
 }
+
 // ============================================================
 // Seed demo data (so admin dashboard has content from day one)
 // ============================================================
 function seedDemoData() {
-var existing = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-// Re-seed if empty or data fields are missing (old format)
-if (existing.length > 0 && Object.keys(existing[0].data || {}).length > 0) return;
-var demos = [
-{ formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Marcus Barlow',   project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:0 },
-{ formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Maya Kumar',      project:'Riverside Complex',          status:'Complete',   flag:null,        daysBack:0 },
-{ formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Thomas Lawrence', project:'Westside Tower',             status:'Incomplete', flag:'High Risk', daysBack:1 },
-{ formId:'pre-site',        formNumber:'3.2',  formName:'Pre-Site Inspection',           worker:'Joel Riggs',      project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:1 },
-{ formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Elizabeth Rorke', project:'North Campus Building B',    status:'Complete',   flag:null,        daysBack:2 },
-{ formId:'concrete-pump',   formNumber:'3.01', formName:'PSI - Concrete Pump Operator', worker:'Fred Duchamp',    project:'Riverside Complex',          status:'Incomplete', flag:null,        daysBack:2 },
-{ formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Kelsey Rupowski', project:'Midtown Parkway',           status:'Complete',   flag:null,        daysBack:3 },
-{ formId:'pre-site',        formNumber:'3.2',  formName:'Pre-Site Inspection',           worker:'Anne Ryder',      project:'Westside Tower',            status:'Complete',   flag:null,        daysBack:4 },
-{ formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Henry Fitz',      project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:5 },
-{ formId:'concrete-pump',   formNumber:'3.01', formName:'PSI - Concrete Pump Operator', worker:'Marcus Barlow',   project:'North Campus Building B',    status:'Complete',   flag:null,        daysBack:6 },
-];
-var seeded = demos.map(function(d, idx) {
-var ts = daysAgo(d.daysBack);
-ts.setHours(6 + idx % 10, (idx * 17) % 60, 0, 0);
-var dt = ts.toISOString().slice(0,16);
-var dy = ts.toISOString().slice(0,10);
-var data = {};
-if (d.formId === 'morning-huddle') {
-var mhVariants = [
-{ weather:'Clear, 8°C / Partly cloudy tomorrow',
-daily_diff:'Concrete pour on Level 12 begins today. North scaffold section extended overnight.',
-safety_flags:'Wet concrete hazard near north stairwell — wet floor signs posted.',
-quality_flags:'None identified.',
-forming:'Level 12 deck forms being set. Shoring inspection complete and signed off.',
-crane:'Tower crane delivering rebar bundles to Level 11, 08:00–10:00.',
-patchers:'Patching Level 9 column tie holes — completion expected by noon.' },
-{ weather:'Overcast, 5°C / Rain expected afternoon',
-daily_diff:'Concrete pour postponed to Friday due to forecast rain. Focus shifts to interior framing on Levels 3–4.',
-safety_flags:'Afternoon rain may create slippery conditions on upper decks — non-slip footwear reminder issued to all.',
-quality_flags:'None.',
-forming:'Interior framing Levels 3–4. Exterior forms on hold pending weather clearance.',
-crane:'No crane activity today.',
-patchers:'Patching Level 2 slab joints — morning only.' },
-{ weather:'Sunny, 14°C / Clear weekend',
-daily_diff:'Final concrete pour for Level 14. Structural inspection scheduled Monday AM.',
-safety_flags:'None.',
-quality_flags:'Ensure cure blankets placed on Level 14 slab by end of day.',
-forming:'Level 14 forms complete. Stripping Level 11 north bay.',
-crane:'Crane on standby for form fly. Operator confirmed.',
-patchers:'No patching today — all previous patches cured and signed off.' },
-];
-var v = mhVariants[Math.floor(idx/3) % mhVariants.length];
-data = Object.assign({ worker:d.worker, project:d.project, datetime:dt }, v);
-} else if (d.formId === 'site-safety') {
-if (d.worker === 'Maya Kumar') {
-data = { worker:d.worker, supervisor:'David Chen', client:'Riverside Dev Corp', project:d.project, date:dy, temperature:'11', personnel:'22',
-audit_0:'Good', audit_1:'Good', audit_2:'Good', audit_3:'Good', audit_4:'Good',
-audit_5:'Good', audit_6:'N/A',  audit_7:'Good', audit_8:'N/A',  audit_9:'Good',
-audit_10:'Good',audit_11:'Good',audit_12:'N/A', audit_13:'N/A', audit_14:'Good',
-audit_15:'Good',audit_16:'Good',audit_17:'N/A', audit_18:'Good',audit_19:'N/A',
-audit_20:'Good',audit_21:'Good',audit_22:'N/A', audit_23:'N/A', audit_24:'N/A',
-audit_25:'N/A', audit_26:'N/A', audit_27:'Good',audit_28:'Good',audit_29:'Good',
-audit_30:'Good',audit_31:'Good',audit_32:'N/A',
-fa_kit:'on', fa_inventory:'on', fire_ext:'on' };
-} else if (d.worker === 'Thomas Lawrence') {
-data = { worker:d.worker, supervisor:'Brian Walsh', client:'Westside Properties', project:d.project, date:dy, temperature:'6', personnel:'31',
-audit_0:'Low Risk',   audit_0_notes:'Minor debris accumulation on Level 8 east corridor.',
-audit_1:'Good', audit_2:'Good', audit_3:'Good',
-audit_4:'High Risk',  audit_4_notes:'SRL not properly attached on Level 11 perimeter — worker instructed to stop work immediately.',
-audit_5:'Good', audit_6:'Good', audit_7:'Good',
-audit_8:'High Risk',  audit_8_notes:'Excavator operating too close to active pedestrian zone without adequate barrier.',
-audit_9:'Good', audit_10:'Good',
-audit_11:'Medium Risk',audit_11_notes:'Three workers observed without eye protection near angle grinding.',
-audit_12:'Medium Risk',audit_12_notes:'Tag lines not used during rebar bundle lifts on Level 10.',
-audit_13:'N/A', audit_14:'Good', audit_15:'Good', audit_16:'Good' };
-} else {
-data = { worker:d.worker, supervisor:'Tom Nguyen', client:'Midtown Dev Group', project:d.project, date:dy, temperature:'9', personnel:'18',
-audit_0:'Good', audit_1:'Good',
-audit_2:'Low Risk', audit_2_notes:'One ladder missing anti-slip feet — replacement ordered.',
-audit_3:'Good', audit_4:'Good', audit_5:'Good', audit_6:'N/A',
-audit_7:'Good', audit_8:'N/A',  audit_9:'Good', audit_10:'Good',
-audit_11:'Good',audit_12:'N/A', audit_14:'Good',audit_15:'Good',
-audit_27:'Good',audit_28:'Good',audit_29:'Good',audit_30:'Good',audit_31:'Good',
-fa_kit:'on', fa_inventory:'on', fire_ext:'on' };
+    var existing = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    // Re-seed if empty or data fields are missing (old format)
+    if (existing.length > 0 && Object.keys(existing[0].data || {}).length > 0) return;
+    var demos = [
+        { formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Marcus Barlow',   project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:0 },
+        { formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Maya Kumar',      project:'Riverside Complex',          status:'Complete',   flag:null,        daysBack:0 },
+        { formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Thomas Lawrence', project:'Westside Tower',             status:'Incomplete', flag:'High Risk', daysBack:1 },
+        { formId:'pre-site',        formNumber:'3.2',  formName:'Pre-Site Inspection',           worker:'Joel Riggs',      project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:1 },
+        { formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Elizabeth Rorke', project:'North Campus Building B',    status:'Complete',   flag:null,        daysBack:2 },
+        { formId:'concrete-pump',   formNumber:'3.01', formName:'PSI - Concrete Pump Operator', worker:'Fred Duchamp',    project:'Riverside Complex',          status:'Incomplete', flag:null,        daysBack:2 },
+        { formId:'site-safety',     formNumber:'2.0',  formName:'Site Safety Inspection',        worker:'Kelsey Rupowski', project:'Midtown Parkway',           status:'Complete',   flag:null,        daysBack:3 },
+        { formId:'pre-site',        formNumber:'3.2',  formName:'Pre-Site Inspection',           worker:'Anne Ryder',      project:'Westside Tower',            status:'Complete',   flag:null,        daysBack:4 },
+        { formId:'morning-huddle',  formNumber:'1.9',  formName:'Morning Huddle',               worker:'Henry Fitz',      project:'Downtown Core - Phase 1',   status:'Complete',   flag:null,        daysBack:5 },
+        { formId:'concrete-pump',   formNumber:'3.01', formName:'PSI - Concrete Pump Operator', worker:'Marcus Barlow',   project:'North Campus Building B',    status:'Complete',   flag:null,        daysBack:6 },
+    ];
+    var seeded = demos.map(function(d, idx) {
+        var ts = daysAgo(d.daysBack);
+        ts.setHours(6 + idx % 10, (idx * 17) % 60, 0, 0);
+        var dt = ts.toISOString().slice(0,16);
+        var dy = ts.toISOString().slice(0,10);
+        var data = {};
+        if (d.formId === 'morning-huddle') {
+            var mhVariants = [
+                { weather:'Clear, 8°C / Partly cloudy tomorrow',
+                  daily_diff:'Concrete pour on Level 12 begins today. North scaffold section extended overnight.',
+                  safety_flags:'Wet concrete hazard near north stairwell — wet floor signs posted.',
+                  quality_flags:'None identified.',
+                  forming:'Level 12 deck forms being set. Shoring inspection complete and signed off.',
+                  crane:'Tower crane delivering rebar bundles to Level 11, 08:00–10:00.',
+                  patchers:'Patching Level 9 column tie holes — completion expected by noon.' },
+                { weather:'Overcast, 5°C / Rain expected afternoon',
+                  daily_diff:'Concrete pour postponed to Friday due to forecast rain. Focus shifts to interior framing on Levels 3–4.',
+                  safety_flags:'Afternoon rain may create slippery conditions on upper decks — non-slip footwear reminder issued to all.',
+                  quality_flags:'None.',
+                  forming:'Interior framing Levels 3–4. Exterior forms on hold pending weather clearance.',
+                  crane:'No crane activity today.',
+                  patchers:'Patching Level 2 slab joints — morning only.' },
+                { weather:'Sunny, 14°C / Clear weekend',
+                  daily_diff:'Final concrete pour for Level 14. Structural inspection scheduled Monday AM.',
+                  safety_flags:'None.',
+                  quality_flags:'Ensure cure blankets placed on Level 14 slab by end of day.',
+                  forming:'Level 14 forms complete. Stripping Level 11 north bay.',
+                  crane:'Crane on standby for form fly. Operator confirmed.',
+                  patchers:'No patching today — all previous patches cured and signed off.' },
+            ];
+            var v = mhVariants[Math.floor(idx/3) % mhVariants.length];
+            data = Object.assign({ worker:d.worker, project:d.project, datetime:dt }, v);
+        } else if (d.formId === 'site-safety') {
+            if (d.worker === 'Maya Kumar') {
+                data = { worker:d.worker, supervisor:'David Chen', client:'Riverside Dev Corp', project:d.project, date:dy, temperature:'11', personnel:'22',
+                    audit_0:'Good', audit_1:'Good', audit_2:'Good', audit_3:'Good', audit_4:'Good',
+                    audit_5:'Good', audit_6:'N/A',  audit_7:'Good', audit_8:'N/A',  audit_9:'Good',
+                    audit_10:'Good',audit_11:'Good',audit_12:'N/A', audit_13:'N/A', audit_14:'Good',
+                    audit_15:'Good',audit_16:'Good',audit_17:'N/A', audit_18:'Good',audit_19:'N/A',
+                    audit_20:'Good',audit_21:'Good',audit_22:'N/A', audit_23:'N/A', audit_24:'N/A',
+                    audit_25:'N/A', audit_26:'N/A', audit_27:'Good',audit_28:'Good',audit_29:'Good',
+                    audit_30:'Good',audit_31:'Good',audit_32:'N/A',
+                    fa_kit:'on', fa_inventory:'on', fire_ext:'on' };
+            } else if (d.worker === 'Thomas Lawrence') {
+                data = { worker:d.worker, supervisor:'Brian Walsh', client:'Westside Properties', project:d.project, date:dy, temperature:'6', personnel:'31',
+                    audit_0:'Low Risk',   audit_0_notes:'Minor debris accumulation on Level 8 east corridor.',
+                    audit_1:'Good', audit_2:'Good', audit_3:'Good',
+                    audit_4:'High Risk',  audit_4_notes:'SRL not properly attached on Level 11 perimeter — worker instructed to stop work immediately.',
+                    audit_5:'Good', audit_6:'Good', audit_7:'Good',
+                    audit_8:'High Risk',  audit_8_notes:'Excavator operating too close to active pedestrian zone without adequate barrier.',
+                    audit_9:'Good', audit_10:'Good',
+                    audit_11:'Medium Risk',audit_11_notes:'Three workers observed without eye protection near angle grinding.',
+                    audit_12:'Medium Risk',audit_12_notes:'Tag lines not used during rebar bundle lifts on Level 10.',
+                    audit_13:'N/A', audit_14:'Good', audit_15:'Good', audit_16:'Good' };
+            } else {
+                data = { worker:d.worker, supervisor:'Tom Nguyen', client:'Midtown Dev Group', project:d.project, date:dy, temperature:'9', personnel:'18',
+                    audit_0:'Good', audit_1:'Good',
+                    audit_2:'Low Risk', audit_2_notes:'One ladder missing anti-slip feet — replacement ordered.',
+                    audit_3:'Good', audit_4:'Good', audit_5:'Good', audit_6:'N/A',
+                    audit_7:'Good', audit_8:'N/A',  audit_9:'Good', audit_10:'Good',
+                    audit_11:'Good',audit_12:'N/A', audit_14:'Good',audit_15:'Good',
+                    audit_27:'Good',audit_28:'Good',audit_29:'Good',audit_30:'Good',audit_31:'Good',
+                    fa_kit:'on', fa_inventory:'on', fire_ext:'on' };
+            }
+        } else if (d.formId === 'pre-site') {
+            if (d.worker === 'Joel Riggs') {
+                data = { worker:d.worker, datetime:dt, project:d.project,
+                    location:'123 Front St W, Toronto ON', work_area:'Level 6 — Forming',
+                    task_0:'on', task_1:'on', task_4:'on',
+                    item_0:'Yes', item_1:'Yes', item_2:'Yes', item_3:'Yes', item_4:'Yes',
+                    item_5:'NA',  item_6:'Yes', item_7:'Yes', item_8:'Yes', item_9:'Yes',
+                    item_10:'NA', item_11:'NA', item_12:'Yes', item_13:'Yes', item_14:'NA',
+                    item_15:'NA', item_16:'Yes', item_17:'Yes', item_18:'Yes', item_19:'NA',
+                    item_20:'NA', item_21:'NA', item_22:'Yes', item_23:'NA', item_24:'Yes',
+                    item_25:'Yes', item_26:'NA', item_27:'Yes', item_28:'Yes', item_29:'Yes',
+                    hazard_id:'Wet conditions on Level 6 slab from overnight rain. Rebar protrusions on east wall.',
+                    hazard_ctrl:'Anti-slip matting deployed. High-vis barricades placed around rebar areas.',
+                    emp_name:'Joel Riggs — EMP-2241' };
+            } else {
+                data = { worker:d.worker, datetime:dt, project:d.project,
+                    location:'88 Westside Ave, Toronto ON', work_area:'Level 3 — Placing Concrete',
+                    task_2:'on', task_3:'on', task_5:'on',
+                    item_0:'Yes', item_1:'Yes', item_2:'Yes', item_3:'Yes', item_4:'Yes',
+                    item_6:'Yes', item_7:'Yes', item_8:'Yes',
+                    item_9:'No',  item_9_notes:'Extension cord damaged — replaced immediately.',
+                    item_12:'Yes',item_13:'Yes',item_17:'Yes',item_18:'Yes',
+                    item_22:'Yes',item_25:'Yes',item_27:'Yes',item_28:'Yes',item_29:'Yes',
+                    hazard_id:'Overhead powerline 18m east of pour location. Concrete splatter risk during pump operation.',
+                    hazard_ctrl:'Maintain 10m exclusion zone from powerline. Full-face shields mandatory during pour. Spill kits staged at three locations.',
+                    emp_name:'Anne Ryder — EMP-3187' };
+            }
+        } else if (d.formId === 'concrete-pump') {
+            if (d.worker === 'Fred Duchamp') {
+                data = { worker:d.worker, datetime:dt, project:d.project,
+                    supervisor:'David Chen', address:'482 Riverside Dr, Toronto ON',
+                    cp_task_0:'on', cp_task_2:'on', cp_task_3:'on',
+                    cp_haz_0:'Applicable', cp_haz_2:'Applicable', cp_haz_4:'Applicable',
+                    cp_haz_5:'NA', cp_haz_6:'Applicable', cp_haz_7:'NA',
+                    cp_haz_10:'Applicable',cp_haz_12:'NA', cp_haz_13:'Applicable',
+                    cp_ctrl_0:'Applicable',cp_ctrl_1:'Applicable',cp_ctrl_5:'Applicable',
+                    cp_ctrl_6:'Applicable',cp_ctrl_7:'Applicable',cp_ctrl_9:'Applicable',
+                    cp_ppe_0:'on', cp_ppe_1:'on', cp_ppe_2:'on', cp_ppe_3:'on',
+                    site_conditions:'Ground conditions soft near pump setup area — additional cribbing deployed under outrigger pads.' };
+            } else {
+                data = { worker:d.worker, datetime:dt, project:d.project,
+                    supervisor:'Lisa Hartman', address:'200 University Ave, Toronto ON',
+                    cp_task_0:'on', cp_task_1:'on', cp_task_2:'on', cp_task_3:'on', cp_task_4:'on', cp_task_5:'on',
+                    cp_haz_0:'Applicable', cp_haz_1:'NA', cp_haz_2:'Applicable', cp_haz_3:'NA',
+                    cp_haz_4:'Applicable', cp_haz_5:'NA', cp_haz_6:'Applicable', cp_haz_7:'Applicable',
+                    cp_haz_10:'Applicable',cp_haz_11:'Applicable',cp_haz_14:'Applicable',cp_haz_15:'Applicable',
+                    cp_ctrl_0:'Applicable',cp_ctrl_1:'Applicable',cp_ctrl_4:'Applicable',cp_ctrl_5:'Applicable',
+                    cp_ctrl_6:'Applicable',cp_ctrl_7:'Applicable',cp_ctrl_9:'Applicable',cp_ctrl_10:'Applicable',
+                    cp_ctrl_11:'Applicable',cp_ctrl_13:'Applicable',
+                    cp_ppe_0:'on', cp_ppe_1:'on', cp_ppe_2:'on', cp_ppe_3:'on', cp_ppe_4:'on', cp_ppe_5:'on',
+                    site_conditions:'Level ground confirmed. Outrigger pads on compacted gravel. Clear 360° access for boom deployment. All personnel briefed on exclusion zone.' };
+            }
+        }
+        return {
+            id: Date.now() - idx * 86400000,
+            formId: d.formId, formName: d.formName, formNumber: d.formNumber,
+            worker: d.worker, project: d.project,
+            submittedAt: ts.toISOString(),
+            status: d.status, flag: d.flag,
+            data: data,
+        };
+    });
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(seeded));
 }
-} else if (d.formId === 'pre-site') {
-if (d.worker === 'Joel Riggs') {
-data = { worker:d.worker, datetime:dt, project:d.project,
-location:'123 Front St W, Toronto ON', work_area:'Level 6 — Forming',
-task_0:'on', task_1:'on', task_4:'on',
-item_0:'Yes', item_1:'Yes', item_2:'Yes', item_3:'Yes', item_4:'Yes',
-item_5:'NA',  item_6:'Yes', item_7:'Yes', item_8:'Yes', item_9:'Yes',
-item_10:'NA', item_11:'NA', item_12:'Yes', item_13:'Yes', item_14:'NA',
-item_15:'NA', item_16:'Yes', item_17:'Yes', item_18:'Yes', item_19:'NA',
-item_20:'NA', item_21:'NA', item_22:'Yes', item_23:'NA', item_24:'Yes',
-item_25:'Yes', item_26:'NA', item_27:'Yes', item_28:'Yes', item_29:'Yes',
-hazard_id:'Wet conditions on Level 6 slab from overnight rain. Rebar protrusions on east wall.',
-hazard_ctrl:'Anti-slip matting deployed. High-vis barricades placed around rebar areas.',
-emp_name:'Joel Riggs — EMP-2241' };
-} else {
-data = { worker:d.worker, datetime:dt, project:d.project,
-location:'88 Westside Ave, Toronto ON', work_area:'Level 3 — Placing Concrete',
-task_2:'on', task_3:'on', task_5:'on',
-item_0:'Yes', item_1:'Yes', item_2:'Yes', item_3:'Yes', item_4:'Yes',
-item_6:'Yes', item_7:'Yes', item_8:'Yes',
-item_9:'No',  item_9_notes:'Extension cord damaged — replaced immediately.',
-item_12:'Yes',item_13:'Yes',item_17:'Yes',item_18:'Yes',
-item_22:'Yes',item_25:'Yes',item_27:'Yes',item_28:'Yes',item_29:'Yes',
-hazard_id:'Overhead powerline 18m east of pour location. Concrete splatter risk during pump operation.',
-hazard_ctrl:'Maintain 10m exclusion zone from powerline. Full-face shields mandatory during pour. Spill kits staged at three locations.',
-emp_name:'Anne Ryder — EMP-3187' };
-}
-} else if (d.formId === 'concrete-pump') {
-if (d.worker === 'Fred Duchamp') {
-data = { worker:d.worker, datetime:dt, project:d.project,
-supervisor:'David Chen', address:'482 Riverside Dr, Toronto ON',
-cp_task_0:'on', cp_task_2:'on', cp_task_3:'on',
-cp_haz_0:'Applicable', cp_haz_2:'Applicable', cp_haz_4:'Applicable',
-cp_haz_5:'NA', cp_haz_6:'Applicable', cp_haz_7:'NA',
-cp_haz_10:'Applicable',cp_haz_12:'NA', cp_haz_13:'Applicable',
-cp_ctrl_0:'Applicable',cp_ctrl_1:'Applicable',cp_ctrl_5:'Applicable',
-cp_ctrl_6:'Applicable',cp_ctrl_7:'Applicable',cp_ctrl_9:'Applicable',
-cp_ppe_0:'on', cp_ppe_1:'on', cp_ppe_2:'on', cp_ppe_3:'on',
-site_conditions:'Ground conditions soft near pump setup area — additional cribbing deployed under outrigger pads.' };
-} else {
-data = { worker:d.worker, datetime:dt, project:d.project,
-supervisor:'Lisa Hartman', address:'200 University Ave, Toronto ON',
-cp_task_0:'on', cp_task_1:'on', cp_task_2:'on', cp_task_3:'on', cp_task_4:'on', cp_task_5:'on',
-cp_haz_0:'Applicable', cp_haz_1:'NA', cp_haz_2:'Applicable', cp_haz_3:'NA',
-cp_haz_4:'Applicable', cp_haz_5:'NA', cp_haz_6:'Applicable', cp_haz_7:'Applicable',
-cp_haz_10:'Applicable',cp_haz_11:'Applicable',cp_haz_14:'Applicable',cp_haz_15:'Applicable',
-cp_ctrl_0:'Applicable',cp_ctrl_1:'Applicable',cp_ctrl_4:'Applicable',cp_ctrl_5:'Applicable',
-cp_ctrl_6:'Applicable',cp_ctrl_7:'Applicable',cp_ctrl_9:'Applicable',cp_ctrl_10:'Applicable',
-cp_ctrl_11:'Applicable',cp_ctrl_13:'Applicable',
-cp_ppe_0:'on', cp_ppe_1:'on', cp_ppe_2:'on', cp_ppe_3:'on', cp_ppe_4:'on', cp_ppe_5:'on',
-site_conditions:'Level ground confirmed. Outrigger pads on compacted gravel. Clear 360° access for boom deployment. All personnel briefed on exclusion zone.' };
-}
-}
-return {
-id: Date.now() - idx * 86400000,
-formId: d.formId, formName: d.formName, formNumber: d.formNumber,
-worker: d.worker, project: d.project,
-submittedAt: ts.toISOString(),
-status: d.status, flag: d.flag,
-data: data,
-};
-});
-localStorage.setItem(STORAGE_KEY, JSON.stringify(seeded));
-}
+
 // ============================================================
 // Init
 // ============================================================
 function init() {
-applySBBrand();
-seedDemoData();
-var formParam = new URLSearchParams(location.search).get('form');
-if (formParam && FORM_META[formParam]) {
-openForm(formParam);
-} else {
-renderHome();
-}
+    applySBBrand();
+    seedDemoData();
+    var formParam = new URLSearchParams(location.search).get('form');
+    if (formParam && FORM_META[formParam]) {
+        openForm(formParam);
+    } else {
+        renderHome();
+    }
 }
 document.addEventListener('DOMContentLoaded', init);
 </script>
 
+<!-- Widget usage counter — see CLAUDE.md -->
 <script>(function(){try{if(location.search.indexOf('preview=1')!==-1)return;var n=location.pathname.split('/').pop();if(!n||n==='index.html')return;var url='https://widget-counter.klauejohann.workers.dev/bump/'+encodeURIComponent(n);if(navigator.sendBeacon)navigator.sendBeacon(url);else fetch(url,{method:'POST',keepalive:true}).catch(function(){});var k='widgetCounts',c=JSON.parse(localStorage.getItem(k)||'{}');c[n]=(c[n]||0)+1;localStorage.setItem(k,JSON.stringify(c));}catch(e){}})();</script>
+
 </body>
 </html>
